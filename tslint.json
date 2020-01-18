@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts"
+    ]
+  },
+  "rules": {
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "jsx-no-lambda":false,
+    "interface-name": false,
+    "member-ordering": false,
+    "no-console": false,
+    "no-unused-expression": [
+      true,
+      "allow-fast-null-checks"
+    ],
+    "max-line-length": [
+      true,
+      140
+    ],
+    "max-file-line-count": [
+      true,
+      600
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ]
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false,
+    "no-console": false
+  }
+}
