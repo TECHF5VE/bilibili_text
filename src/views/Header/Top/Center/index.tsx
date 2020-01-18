@@ -1,9 +1,10 @@
 import * as React from 'react';
+import { Input } from 'antd';
+import * as style from "./style.scss";
 
-import Search from 'antd/lib/input/Search';
-
-
-
-export default function Center(){
-  return <Search placeholder="input search text" onSearch={value=>console.log(value)} enterButton={true} />
+const { Search } = Input;
+export default function Center() {
+  return <div className={style.b}>
+    <Search className={style.a} placeholder="input search text" onSearch={value => console.log(value)} enterButton={true} />
+  </div>
 }
