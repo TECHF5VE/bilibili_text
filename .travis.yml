@@ -5,6 +5,9 @@ branches:
   only:
   - master    # 构建的分支
 cache:
+ apt: true
+ directories:
+    - node_modules
   directories:
   - node_modules # 依赖缓存的目录
 before_install:
@@ -14,12 +17,17 @@ install:
  - npm install -g yarn # 安装编译工具
 script:
 - yarn build
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $bilibili # github 上的token环境变量
-  local-dir: ./build/ ## 根据情况自定义到静态文件输出目录
-  target-branch: gh-pages
-  verbose: true
-  on:
-    branch: master
+after_script:
+  - git clone https://${GH_REF} .build  # GH_REF是最下面配置的仓库地址
+  - cd .build
+  - git checkout master
+  - cd ../
+  - mv .build/.git/ ./public/   # 这一步之前的操作是为了保留master分支的提交记录，不然每次git init的话只有1条commit
+  - cd ./public
+  - git init
+  - git add .
+  - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`" # 提交记录包含时间 
+  - git push --force --quiet "https://${bilibili}@${GH_REF}" master:master #GH_TOKEN是在Travis中配置环境变量的名称
+env:
+ global:
+   - GH_REF: github.com/hamono.github.io.git #设置GH_REF,换成自己用户名和仓库名
