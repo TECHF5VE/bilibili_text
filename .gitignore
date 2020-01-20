@@ -1,7 +1,6 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
 
 # testing
 /coverage
@@ -33,3 +32,4 @@ yarn-error.log*
 
 # JB cache
 /.idea
+node_modules
