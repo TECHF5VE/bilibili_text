@@ -1,0 +1,24 @@
+language: node_js # 构建所需的语言环境
+node_js:
+  - "v10.16.3"
+branches:
+  only:
+  - master    # 构建的分支
+cache:
+  directories:
+  - node_modules # 依赖缓存的目录
+before_install:
+- export TZ='Asia/Beijing'  # 设置时区
+install:
+ - npm install -g yarn # 安装编译工具
+script:
+- yarn build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $bilibili # github 上的token环境变量
+  local-dir: ../hamono.github.io/ ## 根据情况自定义到静态文件输出目录
+  target-branch: gh-pages
+  verbose: true
+  on:
+    branch: master
