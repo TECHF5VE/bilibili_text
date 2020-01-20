@@ -10,7 +10,7 @@ cache:
 before_install:
 - export TZ='Asia/Beijing'  # 设置时区
 install:
- - npm install -g chalk
+ - npm install -g chalk@1.1.3
  - npm install -g yarn # 安装编译工具
 script:
 - yarn build
