@@ -18,7 +18,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   github-token: $bilibili # github 上的token环境变量
-  local-dir: ../hamono.github.io/ ## 根据情况自定义到静态文件输出目录
+  local-dir: ./build/ ## 根据情况自定义到静态文件输出目录
   target-branch: gh-pages
   verbose: true
   on:
