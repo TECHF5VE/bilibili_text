@@ -11,8 +11,8 @@ cache:
 before_install:
 - export TZ='Asia/Beijing'  # 设置时区
 install:
- - npm install
  - npm install -g yarn # 安装编译工具
+ - yarn install
 script:
 - yarn build
 deploy:
