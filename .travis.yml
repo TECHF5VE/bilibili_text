@@ -1,4 +1,4 @@
-os : windows
+# os : windows
 language: node_js # 构建所需的语言环境
 node_js:
   - "v10.16.3"
