@@ -2,6 +2,7 @@ import * as React from "react";
 import * as style from "./style.scss"
 import Game from "./Game"
 import Cartoon from "./Cartoon"
+import BaiNian from "./BaiNian";
 
 export default function Left(){
     return <div className={style.a}>
@@ -12,7 +13,7 @@ export default function Left(){
         <a href="#" className={style.b}>会员购</a>
         <Cartoon />
         <a href="#" className={style.b}>赛事</a>
-        <a href="#" className={style.b}>BML</a>
+        <BaiNian />
         <a href="#" className={style.b}>下载app</a>
     </div>
 }
