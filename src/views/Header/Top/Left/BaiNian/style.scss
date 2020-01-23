@@ -9,7 +9,7 @@
   height:300%;
   animation:fontMove-1 2s infinite;
   animation-direction:alternate;
-  -webkit-animation-delay:5s;
+  -webkit-animation-delay:2s;
 }
 .moveCentext{
   width: 42px;
@@ -19,10 +19,13 @@
   font-size: small;
 }
 .move{
-  width:42px;
+  width: 42px;
   height: 14px;
+  color:rgb(206, 89, 35);
+  text-decoration: none;
+  font-size: 14px;
 }
 @keyframes fontMove-1 {
   　　from {transform: translateY(0px);}
-  　　to {transform: translateY(-15px);}
+  　　to {transform: translateY(-16px);}
 }
