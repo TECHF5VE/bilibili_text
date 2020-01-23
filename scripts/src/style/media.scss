@@ -1,0 +1,25 @@
+$width-breakpoint:1440px;
+$height-breakpoint:800px;
+@mixin width-lg {
+  @media screen and (min-width: $width-breakpoint) {
+    @content
+  }
+}
+
+@mixin width-sm {
+  @media screen and (max-width: $width-breakpoint - 1px) {
+    @content
+  }
+}
+
+@mixin height-lg {
+  @media screen and (min-height: $height-breakpoint) {
+    @content
+  }
+}
+
+@mixin height-sm {
+  @media screen and (max-height: $height-breakpoint - 1px) {
+    @content
+  }
+}

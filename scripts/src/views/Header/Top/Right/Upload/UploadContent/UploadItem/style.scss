@@ -1,0 +1,19 @@
+.item {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  background-color: $color-text-light;
+  transition: 0.3s;
+  &:hover {
+    background-color: $color-background-lighter;
+  }
+}
+
+.icon {
+  font-size: 20px;
+}
