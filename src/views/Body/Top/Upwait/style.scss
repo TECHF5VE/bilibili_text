@@ -1,0 +1,39 @@
+.h4{
+  width:170px;
+  height:95px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 70px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(25, 190, 135);
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+  margin-right: 10px;
+  font-size: smaller;
+}
+:hover.h4{
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.content{
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: small;
+}
+.icon{
+  font-size: 20px;
+  margin-top: 5px;
+}
+.box{
+  position: absolute;
+  width: 170px;
+  height: 95px;
+  overflow: hidden;
+}
