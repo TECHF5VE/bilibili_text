@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import DianShiJu from "./DianShiJu";
+import DianShiJu from "./First";
 import Top from "./Top";
 
 export default function Body(){
