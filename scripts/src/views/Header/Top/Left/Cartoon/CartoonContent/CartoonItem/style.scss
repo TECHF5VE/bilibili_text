@@ -1,0 +1,20 @@
+.icon{
+  margin-top: 80px;
+  width: 100px;
+  height: 200px;
+  font-size: 24px;
+}
+.item {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: $color-text-light;
+  transition: 0.3s;
+  &:hover {
+    background-color: $color-background-lighter;
+  }
+}
