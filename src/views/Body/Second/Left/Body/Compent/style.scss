@@ -1,0 +1,40 @@
+.box {
+  width: 206px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.picture {
+  width: 206px;
+  height: 120px;
+}
+.hidden {
+  position: absolute;
+  margin-left: -206px;
+}
+:hover.hidden {
+  opacity: 0;
+}
+.icon {
+  margin-top: -20px;
+  margin-left: 10px;
+  color: white;
+  position: absolute;
+  font-size: 14px;
+}
+.txt {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dir {
+  color: black;
+  font-size: 12px;
+}
+.tip {
+  color: rgb(141, 141, 141);
+  font-size: smaller;
+}

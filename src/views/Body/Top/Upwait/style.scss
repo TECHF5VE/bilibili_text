@@ -1,10 +1,9 @@
 .h4{
-  width:170px;
-  height:95px;
+  width:206px;
+  height:115px;
   position: absolute;
   margin-left: 0px;
-  margin-top: 70px;
-  background-color: white;
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,6 +20,7 @@
   position: absolute;
   margin-left: 0px;
   margin-top: 0px;
+  background-color: rgba($color: #000000, $alpha: 0.5);
 }
 .content{
   margin-top: 5px;
@@ -33,7 +33,7 @@
 }
 .box{
   position: absolute;
-  width: 170px;
-  height: 95px;
+  width: 206px;
+  height: 115px;
   overflow: hidden;
 }
