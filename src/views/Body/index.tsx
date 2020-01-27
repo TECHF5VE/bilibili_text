@@ -1,12 +1,13 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import DianShiJu from "./First";
+import First from "./First";
 import Top from "./Top";
+import Second from "./Second";
 
-export default function Body(){
+export default function Body() {
   return <div className={style.a}>
     <Top />
-    <DianShiJu />
- 
+    <First />
+    <Second />
   </div>
 }
