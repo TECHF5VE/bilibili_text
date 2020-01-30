@@ -1,0 +1,48 @@
+.box{
+  width: 330px;
+}
+.child{
+  width: 330px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+.child1{
+  width: 330px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.num{
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 14px;
+  color: white;
+  background-color: skyblue;
+}
+.num1{
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    color:black;
+}
+.text{
+  font-size: 14px;
+  color: black;
+}
+.dir{
+  font-size: 14px;
+  color: black;
+}
+.icon{
+  color: rgb(131, 131, 131);
+  width: 150px;
+padding-left: 110px;
+  font-size: x-small;
+}

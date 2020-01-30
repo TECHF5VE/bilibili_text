@@ -65,7 +65,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
-  "homepage": "https://bilibili.hamomo.top",
+  "homepage": "https://hamono.github.io",
   "devDependencies": {
     "@types/classnames": "^2.2.6",
     "@types/jest": "^23.1.1",

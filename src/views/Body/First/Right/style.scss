@@ -1,0 +1,19 @@
+.main{
+  display: flex;
+  flex-direction: column;
+}
+.line{
+  width:330px;
+  margin-top: 32px;
+  display: flex;
+  list-style-type:none;
+}
+.tip{
+  height: 27px;
+  color: black;
+  margin-right: 20px;
+}
+:hover.tip{
+  color:skyblue;
+  border-bottom:1px solid skyblue;
+}

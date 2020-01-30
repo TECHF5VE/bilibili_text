@@ -108,10 +108,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@^16.10":
-  version "16.9.0"
-  resolved "https://registry.npm.taobao.org/@types/react/download/@types/react-16.9.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact%2Fdownload%2F%40types%2Freact-16.9.0.tgz#27434f16d889a335eb4626d1f1e67eda54039e5b"
-  integrity sha1-J0NPFtiJozXrRibR8eZ+2lQDnls=
+"@types/react@^16.9.0":
+  version "16.9.19"
+  resolved "https://registry.npm.taobao.org/@types/react/download/@types/react-16.9.19.tgz#c842aa83ea490007d29938146ff2e4d9e4360c40"
+  integrity sha1-yEKqg+pJAAfSmTgUb/Lk2eQ2DEA=
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -2824,7 +2824,7 @@ getpass@^0.1.1:
 
 gh-pages@^2.2.0:
   version "2.2.0"
-  resolved "https://registry.npm.taobao.org/gh-pages/download/gh-pages-2.2.0.tgz#74ebeaca8d2b9a11279dcbd4a39ddfff3e6caa24"
+  resolved "https://registry.npm.taobao.org/gh-pages/download/gh-pages-2.2.0.tgz?cache=0&sync_timestamp=1578363672155&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgh-pages%2Fdownload%2Fgh-pages-2.2.0.tgz#74ebeaca8d2b9a11279dcbd4a39ddfff3e6caa24"
   integrity sha1-dOvqyo0rmhEnncvUo53f/z5sqiQ=
   dependencies:
     async "^2.6.1"

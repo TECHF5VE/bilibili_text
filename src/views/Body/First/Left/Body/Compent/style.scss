@@ -1,0 +1,50 @@
+.box{
+  width: 206px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.picture{
+  width: 206px;
+  height: 120px;
+}
+.hidden{
+  position: absolute;
+  margin-left:-206px;
+}
+:hover.hidden{
+  opacity:0;
+}
+.icon{
+  margin-top: -20px;
+  margin-left: 10px;
+  color: white;
+  position: absolute;
+  font-size: 14px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.img{
+  width: 40px;
+  height: 40px;
+}
+.txt{
+  width: 150px;
+}
+.text{
+  font-size: 16px;
+  color: black;
+}
+.dir{
+  color: black;
+  font-size: 12px;
+  line-height: 16px;
+}
+.tip{
+  color: rgb(141, 141, 141);
+  line-height: 33px;
+  font-size: smaller
+}
