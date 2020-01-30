@@ -11,14 +11,21 @@
 }
 .hidden {
   position: absolute;
-  margin-left: -206px;
+  margin-top: -120px;
 }
 :hover.hidden {
   opacity: 0;
 }
-.icon {
+.icon1 {
   margin-top: -20px;
   margin-left: 10px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 14px;
+}
+.icon2 {
+  margin-top: -20px;
+  margin-left: 70px;
   color: white;
   position: absolute;
   font-size: 14px;

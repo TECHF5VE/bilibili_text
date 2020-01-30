@@ -2,18 +2,16 @@ import * as React from "react";
 import * as style from "./style.scss";
 import TuiGuang from "./TuiGuang";
 import BaiNianJi from "./BaiNianJi";
-import First from "./First";
+import Third from "./Third";
 import Top from "./Top";
-import Second from "./Second";
+import Fourth from "./Fourth";
 
 export default function Body() {
   return <div className={style.a}>
     <Top />
-  <TuiGuang />
-  <BaiNianJi />
-  
- 
-    <First />
-    <Second />
+    <TuiGuang />
+    <BaiNianJi />
+    <Third />
+    <Fourth />
   </div>
 }
