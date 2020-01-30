@@ -5,7 +5,7 @@ import * as style from "./style.scss";
 
 export default function Left (){
   return <div>
-    <Top />
+    <Top tag="特别推荐"/>
     <div className={style.line}>
       <Compent />
       <Compent />

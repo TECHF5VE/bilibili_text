@@ -3,6 +3,7 @@ import Header from './Header';
 import Body from "./Body";
 import Up from "./Up";
 import "./base.scss";
+import Foot from './Foot';
 
 
 export default function App() {
@@ -10,5 +11,6 @@ export default function App() {
         <Header />
         <Up />
         <Body />
+        <Foot />
     </div>;
 }
