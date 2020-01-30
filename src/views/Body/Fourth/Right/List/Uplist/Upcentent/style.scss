@@ -1,0 +1,38 @@
+.box{
+  width:330px ;
+  height: 130px;
+}
+.top{
+  width:330px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.right{
+  height: 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.dir{
+  font-size: 16px;
+}
+.writer{
+  font-size: 12px;
+  margin-right: 20px;
+}
+.time{
+  font-size: 12px;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.text{
+  margin-left:20px;
+}

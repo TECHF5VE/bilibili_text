@@ -1,16 +1,24 @@
 import React from "react";
 import * as style from "./style.scss";
 import RightX from "./RightX";
-// import Left from "./Left";
-// import Center from "./Center";
+import { Tabs } from "antd";
+import Left from "./Left";
+import Center from "./Center";
+
+const { TabPane } = Tabs;
 
 export default function Right() {
   return <div className={style.main}>
-    <ul className={style.line}>
-      <li><a><div className={style.tip}>直播排行</div></a></li>
-      <li><a><div className={style.tip}>关注的主播</div></a></li>
-      <li><a><div className={style.tip}>为你推荐</div></a></li>
-    </ul>
-    <RightX />
+    <Tabs defaultActiveKey="1" className={style.line}>
+    <TabPane tab="Tab 1" key="1">
+      <Left />
+    </TabPane>
+    <TabPane tab="Tab 2" key="2">
+      <Center />
+    </TabPane>
+    <TabPane tab="Tab 3" key="3">
+      <RightX />
+    </TabPane>
+  </Tabs>
   </div>
 }

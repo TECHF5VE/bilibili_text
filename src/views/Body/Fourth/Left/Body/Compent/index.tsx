@@ -2,14 +2,19 @@ import React from "react";
 import * as style from "./style.scss";
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
-import { Icon } from "antd";
+import { Icon, Tooltip } from "antd";
+
 
 export default function Compent() {
   return <div className={style.box}>
     <a className={style.picture}>
       <div>
         <img src={img2} width="206px" height="120px" />
-        
+        <div className={style.title}>
+          <Tooltip placement="topLeft" title="Prompt Text">
+            <Icon type="play-circle" />
+          </Tooltip>
+        </div>
       </div>
       <div className={style.hidden}>
         <img src={img1} width="206px" height="120px" />
