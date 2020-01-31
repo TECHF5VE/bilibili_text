@@ -1,4 +1,5 @@
-import React from "react";
+import * as React from "react";
+
 import * as style from "./style.scss";
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";

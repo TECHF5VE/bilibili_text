@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import * as style from "./style.scss";
 import RightX from "./RightX";
 // import Left from "./Left";

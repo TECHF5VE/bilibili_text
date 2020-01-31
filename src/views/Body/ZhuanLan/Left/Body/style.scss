@@ -1,0 +1,14 @@
+.main{
+  width: 1070px;
+  height:510px;
+  display: flex;
+  // margin-top: 5px;
+ 
+  justify-content: center;
+}
+.line{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
