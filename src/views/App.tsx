@@ -10,7 +10,6 @@ import img from "./Xiao.png";
 
 
 
-
 export default function App(this: any) {
 
     return <div >
@@ -18,7 +17,7 @@ export default function App(this: any) {
             <Affix offsetTop={600}>
                 <img src={img} />
             </Affix>
-      </div>
+        </div>
         <Header />
         <Up />
         <Navigation />

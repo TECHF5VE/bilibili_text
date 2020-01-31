@@ -1,16 +1,16 @@
 import * as React from "react";
 import * as style from "./style.scss";
-// import RightX from "./RightX";
-// import Left from "./Left";
-// import Center from "./Center";
+import img from "./Right.png";
 
-export default function Right() {
-  return <div className={style.main}>
-    <ul className={style.line}>
-      <li><a><div className={style.tip}>直播排行</div></a></li>
-      <li><a><div className={style.tip}>关注的主播</div></a></li>
-      <li><a><div className={style.tip}>为你推荐</div></a></li>
-    </ul>
-    {/* <RightX /> */}
-  </div>
+
+
+
+export default function Left(){
+    return <div className={style.a}>
+        
+      <div className={style.b}> <a href="#">在线列表</a></div>
+        <a href="#"className={style.c}> <img src={img} width="330px" /></a>
+       
+</div>
+
 }

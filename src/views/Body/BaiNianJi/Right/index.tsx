@@ -9,7 +9,7 @@ export default function Right(){
     return <div className={style.a}>
         
        
-        <a href="#"className={style.b}> <img src={img}/></a>
+        <a href="#"className={style.b}> <img src={img} width="330px"/></a>
        
 </div>
 
