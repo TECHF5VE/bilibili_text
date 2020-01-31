@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Icon, Button } from "antd";
 import * as style from "./style.scss";
 
