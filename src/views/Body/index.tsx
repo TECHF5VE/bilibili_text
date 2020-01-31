@@ -22,6 +22,9 @@ import TwentySecond from "./Sixth";
 import TwentyThird from "./Sixth";
 import TwentyFourth from "./Sixth";
 import TwentyFifth from "./TwentyFifth";
+import Fifth from "./Fifth";
+import Seventh from "./Seventh";
+import Twentieth from "./Twentieth";
 
 export default function Body() {
   return <div className={style.a}>
@@ -30,7 +33,9 @@ export default function Body() {
     <BaiNianJi />
     <Third />
     <Fourth />
+    <Fifth />
     <Sixth tag="番剧动态" id="Sixth"/>
+    <Seventh />
     <Eighth tag="音乐" id="Eighth" />
     <Ninth tag="舞蹈" id="Ninth" />
     <Tenth tag="游戏" id="Tenth" />
@@ -42,6 +47,7 @@ export default function Body() {
     <Seventeenth tag="时尚" id="Seventeenth" />
     <Eighteenth tag="广告" id="Eighteenth" />
     <Nineteenth tag="娱乐" id="Nineteenth" />
+    <Twentieth />
     <TwentyFirst tag="电影" id="TwentyFirst" />
     <TwentySecond tag="电视剧" id="TwentySecond" />
     <TwentyThird tag="影视" id="TwentyThird" />

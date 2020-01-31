@@ -3,8 +3,8 @@ import * as style from "./style.scss";
 import Left from "./Left";
 import Right from "./Right";
 
-export default function First(){
-    return <div className={style.main}>
+export default function Seventh(){
+    return <div className={style.main} id="Seventh">
       <Left />
       <Right />
     </div>
