@@ -1,0 +1,24 @@
+.main{
+  float: right;
+  overflow: hidden;
+}
+.box{
+  width: 70px;
+  height: 670px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  float: right ;
+  font-size: 14px;
+  margin-right: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.link{
+  margin-right: 15px;
+}
+.ant-anchor-ink-ball {
+  display: none;
+}

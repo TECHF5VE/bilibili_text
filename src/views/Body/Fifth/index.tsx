@@ -4,8 +4,8 @@ import * as style from "./style.scss";
 import Left from "./Left";
 import Right from "./Right";
 
-export default function FanJu(){
-    return <div className={style.a}>
+export default function Fifth(){
+    return <div className={style.a} id="Fifth">
     <Left />
     <Right />
     </div>

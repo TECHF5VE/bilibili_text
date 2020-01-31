@@ -4,7 +4,7 @@ import * as style from "./style.scss";
 import Right from "../Fourth/Right";
 
 export default function Sixth (props:any){
-  return <div className={style.main}>
+  return <div className={style.main} id={props.id}>
     <Left tag={props.tag}/>
     <Right />
   </div>
