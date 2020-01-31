@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import * as style from "./style.scss";
 import img1 from "./img1.jpg";
 import img3 from "./img3.jpg";
@@ -21,5 +21,4 @@ export default function Compent() {
       </div>
     </a>
   </div>
-
 }

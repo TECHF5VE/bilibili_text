@@ -7,8 +7,19 @@ import Foot from './Foot';
 import Navigation from './Navigation';
 
 
-export default function App() {
+
+
+export default function App(this: any) {
+
     return <div >
+            <div>
+                
+
+        
+        <Affix offsetTop={700} onChange={affixed => console.log(affixed)}>
+        <img src={img}/>
+  </Affix>,
+      </div> 
         <Header />
         <Up />
         <Navigation />
@@ -16,3 +27,17 @@ export default function App() {
         <Foot />
     </div>;
 }
+
+
+
+
+
+
+
+  
+
+
+    
+  
+
+

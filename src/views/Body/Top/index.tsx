@@ -8,7 +8,7 @@ import Upwait from "./Upwait";
 export default function Top() {
   return <div className={style.box}>
     <div className={style.left}>
-      <Carousel autoplay={true} dots={true} dotPosition="bottom">
+      <Carousel autoplay={true} dots={true}>
         <div className={style.picture1}>
           <a href="">
             <p>这是一个p元素，给它设置了绝对定位</p>
