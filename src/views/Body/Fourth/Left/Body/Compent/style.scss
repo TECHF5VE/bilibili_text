@@ -1,0 +1,56 @@
+.box {
+  width: 206px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.picture {
+  width: 206px;
+  height: 120px;
+}
+.title{
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 185px;
+}
+.hidden {
+  position: absolute;
+  margin-top: -120px;
+}
+:hover.hidden {
+  opacity: 0;
+}
+.icon1 {
+  margin-top: -20px;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 14px;
+}
+.icon2 {
+  margin-top: -20px;
+  margin-left: 70px;
+  color: white;
+  position: absolute;
+  font-size: 14px;
+}
+.txt {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dir {
+  color: black;
+  font-size: 12px;
+}
+.tip {
+  color: rgb(141, 141, 141);
+  font-size: smaller;
+}

@@ -3,8 +3,7 @@ import Header from './Header';
 import Body from "./Body";
 import Up from "./Up";
 import "./base.scss";
-import { Affix } from 'antd';
-import img from "./Xiao.png";
+import Foot from './Foot';
 
 
 
@@ -23,7 +22,7 @@ export default function App(this: any) {
         <Header />
         <Up />
         <Body />
-  
+        <Foot />
     </div>;
 }
 

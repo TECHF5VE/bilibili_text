@@ -1,0 +1,21 @@
+.main{
+  width: 100%;
+  height: 250px;
+  background-color: rgb(235, 235, 235);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box{
+  width: 1415px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.a{
+  margin: 0 auto;
+  font-size: 14px;
+  color: rgb(90, 90, 90);
+}
