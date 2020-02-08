@@ -52,11 +52,13 @@ export default function Top() {
       </div>
       <div className={style.action}>
         <a >
+        <Upwait />
           <img src={img} className={style.icon2}  width="170px"/>
         </a>
       </div>
       <div className={style.action}>
         <a >
+        <Upwait />
           <img src={img} className={style.icon2} width="170px"/>
         </a>
       </div>
@@ -64,16 +66,19 @@ export default function Top() {
     <div className={style.line1}>
       <div className={style.action}>
         <a>
+        <Upwait />
           <img src={img} className={style.icon2}  width="170px"/>
         </a>
       </div>
       <div className={style.action}>
         <a >
+        <Upwait />
           <img src={img} className={style.icon2}  width="170px"/>
         </a>
       </div>
       <div className={style.action}>
         <a>
+        <Upwait />
           <img src={img} className={style.icon2}  width="170px"/>
         </a>
       </div>

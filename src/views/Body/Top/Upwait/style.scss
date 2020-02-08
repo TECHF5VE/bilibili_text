@@ -16,10 +16,11 @@
   margin-right: 10px;
   font-size: smaller;
 }
-:hover.h4{
+.box:hover .h4{
   position: absolute;
   margin-left: 0px;
   margin-top: 0px;
+  transition: 0.3s;
   background-color: rgba($color: #000000, $alpha: 0.5);
 }
 .content{
@@ -33,7 +34,7 @@
 }
 .box{
   position: absolute;
-  width: 206px;
+  width: 170px;
   height: 115px;
   overflow: hidden;
 }
