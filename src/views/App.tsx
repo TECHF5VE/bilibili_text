@@ -46,15 +46,18 @@ function Bodys(){
         <Foot />
     </div>
 }
-function Abc (){
-  return <div>Holle World</div>
+function defaultTop(){
+  return <>
+  <Header />
+  <Up/>
+  </>
 }
 export default function App() {
 
     return <BrowserRouter>
 
     <Switch>
-      <Route path="/apc/*" component={Abc} />
+      <Route path="/whachLater/*" component={defaultTop} />
       <Route component={Bodys} />
     </Switch>
     </BrowserRouter>

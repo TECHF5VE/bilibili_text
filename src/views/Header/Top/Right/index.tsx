@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Right() {
   return (
     <div className={style.a}>
-      <Link to="/apc/" className={style.b}>
+      <Link to="/whachLater/" className={style.b}>
         稍后再看
       </Link>
       <a  className={style.b}>
