@@ -3,9 +3,9 @@ import Top from "../../Sixth/Left/Top";
 import Compent from "../../Fourth/Left/Body/Compent";
 import * as style from "./style.scss";
 
-export default function Left (){
+export default function Left (props:any){
   return <div>
-    <Top tag="特别推荐"/>
+    <Top tag={props.tag}/>
     <div className={style.line}>
       <Compent />
       <Compent />

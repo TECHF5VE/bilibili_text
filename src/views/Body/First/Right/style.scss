@@ -1,21 +1,20 @@
 .a{
     float:right;
-    width:13%;
+    width:330px;
     display: flex;
     flex-direction:column;
- 
+    margin-top:40px;
     justify-content: space-between;
  
 }
 
 .b{
     text-align: center;
- 
     height: 20px;
-    width:270px;
+    width:330px;
     background-color: rgb(240, 236, 236);
-    margin-bottom: 10px;
 }
 .c{
     height: 200px;
+    margin-top:40px;
 }

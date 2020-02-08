@@ -9,10 +9,10 @@ const { TabPane } = Tabs;
 const operations = <Button>新番时间表 ></Button>;
 
 
-export default function Up(){
+export default function Up(props:any){
     return <div >
      <a href="#" > <img src={img}/></a>
- <a href="#" className={style.a}> 番剧</a>
+ <a href="#" className={style.a}> {props.tag}</a>
  <Tabs tabBarExtraContent={operations}>
     <TabPane tab="最近" key="1">
       <Down />

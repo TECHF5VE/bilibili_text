@@ -5,20 +5,14 @@ import Up from "./Up";
 import "./base.scss";
 import Foot from './Foot';
 import Navigation from './Navigation';
-import { Affix } from 'antd';
-import img from "./Xiao.png";
-
+import Picture from './Picture';
 
 
 
 export default function App(this: any) {
 
     return <div >
-        <div>
-            <Affix offsetTop={600}>
-                <img src={img} />
-            </Affix>
-      </div>
+        <Picture />
         <Header />
         <Up />
         <Navigation />

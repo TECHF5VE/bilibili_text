@@ -1,14 +1,12 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import Up from "./Up";
-import Down from "./Down";
+import Leftx from "../../TwentyFifth/Left";
 
-export default function Left(){
-  
-    return <div className={style.a}>
-      <Up />
-  
-      <Down />
-      
-    </div>
-    }
+export default function Left() {
+
+  return <div className={style.a}>
+
+    <Leftx tag="拜年祭" />
+
+  </div>
+}

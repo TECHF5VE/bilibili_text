@@ -4,9 +4,9 @@ import * as style from "./style.scss";
 import Up from "./Up";
 
 
-export default function Left(){
+export default function Left(props:any){
     return <div className={style.a}>
-    <Up />
+    <Up tag={props.tag} />
     
     </div>
 }
