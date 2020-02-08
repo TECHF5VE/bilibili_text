@@ -9,10 +9,8 @@ export default function Body() {
       <Compent />
       <Compent />
       <Compent />
-      <Compent />
     </div>
     <div className={style.line}>
-      <Compent />
       <Compent />
       <Compent />
       <Compent />

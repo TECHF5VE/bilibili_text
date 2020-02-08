@@ -4,10 +4,9 @@ import Compent from "../../Fourth/Left/Body/Compent";
 import * as style from "./style.scss";
 
 export default function Left (props:any){
-  return <div>
+  return <div className={style.box} >
     <Top tag={props.tag}/>
     <div className={style.line}>
-      <Compent />
       <Compent />
       <Compent />
       <Compent />

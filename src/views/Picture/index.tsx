@@ -7,7 +7,7 @@ export default function Picture() {
 
   return <div className={style.box}>
 
-    <Affix offsetTop={600}>
+    <Affix offsetTop={400}>
       <img src={img}/>
     </Affix>
   </div>

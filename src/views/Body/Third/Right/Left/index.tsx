@@ -4,7 +4,7 @@ import { Avatar, Icon } from 'antd';
 
 export default function Left() {
   return <div className={style.box}>
-    <a href="" className={style.child1}>
+    <a  className={style.child1}>
       <div className={style.num}> 01</div>
       <Avatar size="large" icon="user" />
       <div>
@@ -13,7 +13,7 @@ export default function Left() {
       </div>
       <div className={style.icon}><Icon type="team" />999</div>
     </a>
-    <a href="" className={style.child}>
+    <a  className={style.child}>
       <div className={style.num}> 02</div>
       <Avatar size="large" icon="user" />
       <div>
@@ -22,7 +22,7 @@ export default function Left() {
       </div>
       <div className={style.icon}><Icon type="team" />888</div>
     </a>
-    <a href="" className={style.child}>
+    <a  className={style.child}>
       <div className={style.num}> 03</div>
       <Avatar size="large" icon="user" />
       <div>
@@ -31,7 +31,7 @@ export default function Left() {
       </div>
       <div className={style.icon}><Icon type="team" />666</div>
     </a>
-    <a href="" className={style.child}>
+    <a  className={style.child}>
       <div className={style.num1}> 4</div>
       <Avatar size="large" icon="user" />
       <div>
@@ -40,7 +40,7 @@ export default function Left() {
       </div>
       <div className={style.icon}><Icon type="team" />666</div>
     </a>
-    <a href="" className={style.child}>
+    <a  className={style.child}>
       <div className={style.num1}> 5</div>
       <Avatar size="large" icon="user" />
       <div>
@@ -49,7 +49,7 @@ export default function Left() {
       </div>
       <div className={style.icon}><Icon type="team" />666</div>
     </a>
-    <a href="" className={style.child}>
+    <a  className={style.child}>
       <div className={style.num1}> 6</div>
       <Avatar size="large" icon="user" />
       <div>

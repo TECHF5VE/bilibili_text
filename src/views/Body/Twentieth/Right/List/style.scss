@@ -1,9 +1,9 @@
 .box{
-  width: 330px;
+  width: 100%;
   margin-top: 20px;
 }
 .child{
-  width: 330px;
+  width: 100%;
   height: 45px;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
   margin-top: 25px;
 }
 .child1{
-  width: 330px;
+  width: 100%;
   height: 45px;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,6 @@
 }
 .icon{
   color: rgb(131, 131, 131);
-  width: 150px;
-padding-left: 110px;
+  width: 30px;
   font-size: x-small;
 }

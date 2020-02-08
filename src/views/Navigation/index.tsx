@@ -1,12 +1,12 @@
 import React from "react";
-import { Anchor } from "antd";
 import * as style from "./style.scss";
 import Icontip from "./Icontip";
+import { Anchor } from "antd";
 
 const { Link } = Anchor;
 export default function Navigation() {
   return <div className={style.main}>
-    <Anchor offsetTop={150}>
+    <Anchor offsetTop={80}>
       <div className={style.box}>
         <Link className={style.link} href="#Third" title="直播" />
         <Link className={style.link} href="#Fourth" title="动画" />

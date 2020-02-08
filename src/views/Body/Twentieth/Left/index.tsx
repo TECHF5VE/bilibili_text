@@ -1,9 +1,10 @@
 import * as React from "react";
 import Top from "./Top";
 import Body from "./Body";
+import * as style from "./style.scss"
 
 export default function Left (){
-  return <div>
+  return <div className={style.box}>
     <Top />
     <Body />
   </div>

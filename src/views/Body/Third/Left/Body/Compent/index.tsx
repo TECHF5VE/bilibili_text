@@ -7,12 +7,12 @@ import { Icon } from "antd";
 
 export default function Compent() {
   return <div className={style.box}>
-    <a href="" className={style.picture}>
-      <img src={img2} width="206px" height="120px" />
-      <img src={img1} width="206px" height="120px" className={style.hidden}/>
+    <a  className={style.picture}>
+      <img src={img2} width="190px" height="120px" />
+      <img src={img1} width="190px" height="120px" className={style.hidden}/>
       <div className={style.icon}><Icon type="team" />999</div>
     </a>
-    <a href="" className={style.content}>
+    <a  className={style.content}>
       <img src={img3} width="40px" height="40px" className={style.img}/>
       <div className={style.txt}>
         <a className={style.text}>央视新闻</a><br/>
