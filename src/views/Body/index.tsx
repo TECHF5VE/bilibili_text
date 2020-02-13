@@ -28,7 +28,7 @@ import Seventh from "./Seventh";
 import Twentieth from "./Twentieth";
 
 export default function Body() {
-  return <div className={style.a}>
+  return<div className={style.a}>
     <Top />
     <First />
     <Second />
@@ -56,4 +56,5 @@ export default function Body() {
     <TwentyFourth tag="电视剧" id="TwentyFourth" />
     <TwentyFifth tag="特别推荐" />
   </div>
+
 }

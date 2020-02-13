@@ -3,7 +3,6 @@ import * as style from "./style.scss";
 import Top from "./Top";
 import img1 from "../img1.jpg";
 import img2 from "./img1.png";
-import UpContext from "../../../Upcontext";
 import { CounterContext } from "../CounterContext"
 
 
@@ -38,8 +37,6 @@ function CounterConsumer() {
 }
 export default function TodoList() {
   return (
-    <UpContext>
-      <CounterConsumer />
-    </ UpContext>
-  );
+    <CounterConsumer />
+  )
 }
