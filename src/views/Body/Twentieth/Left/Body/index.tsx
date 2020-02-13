@@ -1,22 +1,22 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import Compent from "./Compent";
+import UpContext from "./Compent";
 
 export default function Body() {
   return <div className={style.main}>
     <div className={style.line}>
-      <Compent />
-      <Compent />
+      <UpContext />
+      <UpContext />
      
-      <Compent />
-      <Compent />
+      <UpContext />
+      <UpContext />
     </div>
     <div className={style.line}>
-      <Compent />
+      <UpContext />
    
-      <Compent />
-      <Compent />
-      <Compent />
+      <UpContext />
+      <UpContext />
+      <UpContext />
     </div>
   </div>
 

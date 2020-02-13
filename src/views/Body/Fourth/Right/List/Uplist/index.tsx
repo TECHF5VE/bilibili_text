@@ -3,7 +3,7 @@ import { Popover } from "antd";
 import* as style from "./style.scss";
 import Upcontent from "./Upcentent";
 
-export default function Uplist(props: any) {
+export default function Uplist(props:{tag:string}) {
   return <div>
     <Popover content={<Upcontent />} title={null}>
       <div className={style.box}>

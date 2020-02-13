@@ -3,7 +3,7 @@ import Top from "./Top";
 import Body from "../../Fourth/Left/Body"
 import * as style from "./style.scss";
 
-export default function Left (props:any){
+export default function Left (props:{tag:string}){
   return <div className={style.box}>
     <Top tag={props.tag}/>
     <Body />

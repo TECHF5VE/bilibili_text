@@ -29,6 +29,7 @@
       true,
       600
     ],
+    "no-any":true,
     "indent": [
       true,
       "spaces",

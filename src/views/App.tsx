@@ -12,6 +12,8 @@ import Picture from './Picture';
 
 import * as Immutable from 'immutable';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import TodoList from './Body/Fourth/Left/Body/Component/TodoList';
+
 
 
 // 原生JS的写法
@@ -50,6 +52,7 @@ function defaultTop(){
   return <>
   <Header />
   <Up/>
+  <TodoList />
   </>
 }
 export default function App() {
@@ -73,6 +76,44 @@ export default function App() {
 //   return <input value={value} onChange={handleChange} />
 
 // }
+// import * as React from 'react';
+// interface ICounter{
+// value: number;
+// setValue: React.Dispatch<React.SetStateAction<number>> ;
+// }
+// const CounterContext = React.createContext<ICounter>(null);
+// function CounterProvider({ children }: React.PropsWithChildren<{}>) {
+//   const [value, setValue] = React.useState(0);
+//   React.useEffect(()=>{
+//     console.log(value) ;
+//   },[value]);
+//   return (
+//   <CounterContext.Provider value={{ value, setValue }}>
+//     {children}
+//   </ CounterContext.Provider>
+// );
+// }
+// function CounterConsumer() {
+//   const { value, setValue } = React.useContext(CounterContext);
+//   return (
+//     <div>
+//       <p>{value}</ p>
+//       <button onClick={() =>setValue(v=>v + 1)}>click</ button>
+// </div >
+// );
+// }
+// export default function App() {
+//   return (
+//   <CounterProvider>
+//     <CounterConsumer />
+//   </ CounterProvider>
+// );
+// }
+
+
+
+
+
 
 
 

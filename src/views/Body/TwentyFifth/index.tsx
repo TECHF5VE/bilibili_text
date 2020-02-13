@@ -3,7 +3,7 @@ import * as style from "./style.scss";
 import Left from "./Left";
 import Right from "./Right";
 
-export default function TwentyFifth (props:any){
+export default function TwentyFifth (props:{tag:string}){
   return <div className={style.main} id="TwentyFifth" >
     <Left tag={props.tag}/>
     <Right />

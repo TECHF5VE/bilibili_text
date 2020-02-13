@@ -9,7 +9,7 @@ const { TabPane } = Tabs;
 const operations = <Button>新番时间表 ></Button>;
 
 
-export default function Up(props:any){
+export default function Up(props:{ tag: string}){
     return <div >
      <a href="#" > <img src={img}/></a>
  <a href="#" className={style.a}> {props.tag}</a>
@@ -23,6 +23,6 @@ export default function Up(props:any){
     <TabPane tab="周二" key="3">
     <Down />
     </TabPane>
-  </Tabs>,
+  </Tabs>
     </div>
 }
