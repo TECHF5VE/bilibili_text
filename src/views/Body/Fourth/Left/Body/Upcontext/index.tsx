@@ -1,4 +1,4 @@
-import { CounterContext } from "../CounterContext";
+import { CounterContext } from "./Component/CounterContext";
 import React from "react";
 
 export default function Component({ children }: React.PropsWithChildren<{}>) {
