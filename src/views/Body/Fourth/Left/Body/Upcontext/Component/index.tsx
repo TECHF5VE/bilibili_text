@@ -20,7 +20,7 @@ export default function Component(props: { value: string }) {
         </div>
       </div>
       <div className={style.hidden}>
-        <div className={style.img}><img src={img1} width="190px" height="130px" /></div>
+        <div className={style.img}><img src={img1} width="190px" height="120px" /></div>
         <div className={style.title}>
           <Tooltip placement="top" title="稍后再看">
             <Icon type="play-circle" onClick={addListItem} />

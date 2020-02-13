@@ -6,8 +6,6 @@ import img2 from "./img1.png";
 import { CounterContext } from "../CounterContext"
 
 
-// const CounterContext = React.createContext(null)
-
 function CounterConsumer() {
   const { list, setList } = React.useContext(CounterContext);
   const removeListItem = React.useCallback((index: number) => () => {
@@ -26,7 +24,7 @@ function CounterConsumer() {
               <div className={style.title}>
                 {v}
               </div>
-              <span>{v}</span>
+              <div className={style.span}>{v}</div>
             </div>
             <img src={img2} width="22px" height="25px" onClick={removeListItem(i)} />
           </div>
