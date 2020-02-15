@@ -28,7 +28,6 @@ export default function Navigation() {
         <Link className={style.link} href="#TwentySecond" title="电视剧" />
         <Link className={style.link} href="#TwentyThird" title="影视" />
         <Link className={style.link} href="#TwentyFourth" title="纪录片" />
-        <Link className={style.link} href="#TwentyFiFth" title="特别推荐" />
         <Link className={style.link} href="#" title={<Icontip />} />
       </div>
     </Anchor>

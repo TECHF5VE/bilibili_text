@@ -13,8 +13,8 @@ export default function Up() {
     <a> <img src={img} /></a>
     <a href="#" className={style.a}> 漫画</a>
     <Tabs tabBarExtraContent={<div className={style.right}>
-      <Button size="small" icon="sync">换一批</Button>
-      <Button size="small" className={style.button}>更多<Icon type="right" /></Button>
+      <Button type="primary" size="small" icon="sync">换一批</Button>
+      <Button type="primary" size="small" className={style.button}>更多<Icon type="right" /></Button>
     </div>}>
       <TabPane tab="人气推荐" key="1">
         <Down />

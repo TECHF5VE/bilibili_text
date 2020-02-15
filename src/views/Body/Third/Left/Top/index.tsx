@@ -20,8 +20,8 @@ export default function Top() {
       </div>
     </div>
     <div className={style.right}>
-    <Button size="small" icon="sync">换一批</Button> 
-    <Button size="small" className={style.button}>更多<Icon type="right" /></Button>
+    <Button type="primary" size="small" icon="sync">换一批</Button> 
+    <Button type="primary" size="small" className={style.button}>更多<Icon type="right" /></Button>
     </div>
   </div>
 }

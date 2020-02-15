@@ -10,19 +10,30 @@
   height: 120px;
 }
 .title{
-  width: 50px;
-  height: 50px;
+  width: 23px;
+  height: 23px;
   font-size: 16px;
   color: black;
   position: absolute;
-  margin-top: -25px;
-  margin-left: 170px;
+  margin-top: -30px;
+  margin-left: 160px;
+  background-color:rgba(#000000,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+}
+.fontSize{
+  font-size: 14px;
 }
 .noHidden{
   width: 190px;
 }
 .img{
   width: 190px;
+  height: 120px;
+  border-radius: 7px;
+  overflow: hidden;
 }
 .hidden {
   width: 190px;
@@ -30,6 +41,7 @@
   margin-top: -120px;
 }
 :hover.hidden {
+  transition: 0.3s;
   opacity: 0;
 }
 :hover.title{

@@ -22,6 +22,7 @@ function Bodys(){
 }
 function defaultTop(){
   return <>
+  <Header />
   <Up/>
   <TodoList />
   </>

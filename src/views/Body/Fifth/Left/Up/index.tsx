@@ -6,7 +6,7 @@ import { Tabs,Button } from 'antd';
 import Down from "./Down"
 
 const { TabPane } = Tabs;
-const operations = <Button>新番时间表 ></Button>;
+const operations = <Button type="primary">新番时间表 ></Button>;
 
 
 export default function Up(props:{ tag: string}){
