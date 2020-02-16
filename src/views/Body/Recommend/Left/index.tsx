@@ -1,6 +1,6 @@
 import React from "react";
-import Top from "../../Sixth/Left/Top";
-import Component from "../../Fourth/Left/Body/Upcontext/Component";
+import Top from "../../FolkOperaDynamic/Left/Top";
+import Component from "../../Animation/Left/Body/Upcontext/Component";
 import * as style from "./style.scss";
 
 export default function Left (props:{tag:string}){

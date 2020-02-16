@@ -1,12 +1,12 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import Left from "../TwentyFifth/Left";
+import Left from "../Recommend/Left";
 import Right from "./Right";
 
-export default function TuiGuang(){
+export default function Second(){
   
         return <div className={style.a}>
-          <Left tag="推广" />
+          <Left tag="拜年祭"/>
       
           <Right />
           

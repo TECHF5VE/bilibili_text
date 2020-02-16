@@ -1,6 +1,6 @@
 import React from "react";
-import Left from "../../../Fourth/Left/Top/Left";
-import Right from "../../../Fourth/Left/Top/Right";
+import Left from "../../../Animation/Left/Top/Left";
+import Right from "../../../Animation/Left/Top/Right";
 import * as style from "./style.scss";
 
 export default function Top (props:{tag:string}){
