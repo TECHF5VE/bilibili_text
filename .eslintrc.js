@@ -146,6 +146,8 @@ module.exports = {
                 "hoist": "all"
             }
         ],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
         "no-throw-literal": "error",
         "no-trailing-spaces": "off",
         "no-undef-init": "error",
