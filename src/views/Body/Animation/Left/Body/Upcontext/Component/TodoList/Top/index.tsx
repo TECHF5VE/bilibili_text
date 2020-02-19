@@ -6,17 +6,16 @@ import { CounterContext } from "../../CounterContext";
 import { Input } from 'antd';
 
 const { Search } = Input;
-export default function Top(props: { number: number }) {
+export default function Top(props: { num: number }) {
   const { list, setList } = React.useContext(CounterContext);
-  const removeAll = React.useCallback(() => { setList([]) }, [])
+  const removeAll = React.useCallback(() => { setList([]) },[setList])
   const temp=['']
-  // const [temp, setTemp] = React.useState([]);
   const [inputValue, setInputValue] = React.useState('');
   const handleValue = React.useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value)
-  }, [inputValue])
+  }, [])
 
-  //添加待选项（暂无用）
+  // 添加待选项（暂无用）
   const addOptions = React.useCallback(() => {
  
     list.map((item: string) => {
@@ -35,7 +34,7 @@ export default function Top(props: { number: number }) {
     addOptions()
   }
 
-  //返回搜索结果
+  // 返回搜索结果
   const handleResult = React.useCallback(() => {
     list.map((item: string) => {
       if (item.includes(inputValue)) {
@@ -46,10 +45,10 @@ export default function Top(props: { number: number }) {
     console.log(temp)
     setList(temp)
     console.log(list)
-  }, [list,temp])
+  }, [inputValue, list, setList, temp])
   return <div className={style.box}>
     <div className={style.left}>
-      <img className={style.img} src={img} width="30px" height="30px" /><span>稍后再看 ({props.number}/100)</span>
+      <img className={style.img} src={img} width="30px" height="30px" /><span>稍后再看 ({props.num}/100)</span>
     </div>
     <div>
       <Search placeholder="input search text" value={inputValue} enterButton={true} style={{ width: 300 }}

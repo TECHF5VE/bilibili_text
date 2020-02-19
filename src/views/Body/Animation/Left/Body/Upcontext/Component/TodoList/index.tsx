@@ -12,9 +12,9 @@ function CounterConsumer() {
     const newList = [...list];
     newList.splice(index, 1);
     setList(newList);
-  }, [list]);
+  }, [list, setList]);
   return <div className={style.box}>
-    <Top number={list.length} />
+    <Top num={list.length} />
     <div className={style.ul}>
       <ul className={style.ul}>
         {list.map((v: {}, i: number) => <li className={style.li} key={i}>{i + 1}
