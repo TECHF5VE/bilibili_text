@@ -2,6 +2,11 @@
   "name": "second",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamono/bilibili_text.git"
+  },
+  "license": "MIT",
   "resolutions": {
     "@types/react": "^16.8.1"
   },
