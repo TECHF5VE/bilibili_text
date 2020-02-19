@@ -7,28 +7,16 @@ import { CounterContext } from "./CounterContext";
 
 export default function Component(props: { value: string }) {
   const { list, setList } = React.useContext(CounterContext);
-  // function mouseOut() {
-  //   const topPicture = document.querySelector<HTMLLIElement>('.hidden');
-  //   topPicture.style.opacity = "0.5";
-  // }
-  // function mouseOn() {
-  //   const topPicture = document.querySelector<HTMLLIElement>('.hidden');
-  //   topPicture.style.opacity = "0";
-  //   topPicture.style.transition = "0.3s"
-  // }  
-  // const topPicture = document.querySelector<HTMLLIElement>('.hidden');
-  // const [mouse,setMouse]=useState()
+  const [hover, setHover] = React.useState('稍后再看');
+  const changeContent = React.useCallback(() => {
+    list.map((item: string) => {
+      if (item === props.value) {
+        setHover("已添加")
+      }
+    })
+  }, [list, props.value])
 
-
-  // const outMouse = useEffect(() => {
-  //   topPicture.style.opacity = "0.5";
-  // })
-  // const overMouse = useEffect(() => {
-  //   topPicture.style.opacity = "0";
-  //   topPicture.style.transition = "0.3s"
-  // })
-
-  const addListItem = React.useCallback(() => setList([...list, props.value]), [list, props.value]);
+  const addListItem = React.useCallback(() => setList([...list, props.value]), [list, props.value, setList]);
   return <div className={style.box}>
     <a className={style.picture}>
       <div className={style.noHidden}>
@@ -39,9 +27,12 @@ export default function Component(props: { value: string }) {
       </div>
       <div className={style.hidden}>
         <div className={style.img}><img src={img1} width="190px" height="120px" /></div>
-        <Tooltip placement="topRight" title="稍后再看" mouseEnterDelay={0} className={style.fontSize}>
-          <Icon type="play-circle" onClick={addListItem} className={style.title} />
-        </Tooltip>
+        <div onMouseOver={changeContent}>
+          <Tooltip placement="topRight" title={hover} mouseEnterDelay={0} className={style.fontSize} >
+            <Icon type="play-circle" onClick={addListItem} className={style.title} />
+          </Tooltip>
+        </div>
+
         <div className={style.icon1}><Icon type="team" />999</div>
         <div className={style.icon2}><Icon type="like" />999</div>
       </div>
