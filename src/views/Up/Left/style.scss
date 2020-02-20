@@ -1,19 +1,18 @@
 .a{
-    width: 180px;
-    // background-color: cadetblue;
-    
+    width: 15%;
     display: flex;
     justify-content: space-between;  
 }
 .c{
-    width: 60px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .b{
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
     color:rgb(22, 21, 21);
-}
-.d{
-    width: 50px;
 }
 .e{
     width: 60px;

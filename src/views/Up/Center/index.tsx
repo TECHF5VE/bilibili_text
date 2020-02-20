@@ -1,30 +1,16 @@
 import * as React from "react";
 import * as style from "./style.scss";
+import UpWord from "./UpWord";
 
-export default function Center(){
-    return <div className={style.a}><div className={style.c}>
-        <a href="" className={style.b}>动画</a>
-        <a href="" className={style.b}>番剧</a>
-</div><div className={style.c}>
-        <a href="" className={style.b}>音乐</a>
-        <a href="" className={style.b}>国创</a>
-     </div>   <div className={style.c}>
-        <a href="" className={style.b}>舞蹈</a>
-        <a href="" className={style.b}>游戏</a>
-   </div>     <div className={style.c}>
-        <a href="" className={style.b}>科技</a>
-        <a href="" className={style.b}>数码</a>
-      </div>  <div className={style.c}>
-        <a href="" className={style.b}>生活</a>
-        <a href="" className={style.b}>鬼畜</a>
-     </div>   <div className={style.c}>
-        <a href="" className={style.b}>时尚</a>
-        <a href="" className={style.b}>广告</a>
-     </div>   <div className={style.c}>
-        <a href="" className={style.b}>娱乐</a>
-        <a href="" className={style.b}>影视</a>
-      </div>  <div className={style.c}>
-        <a href="" className={style.b}>放映厅</a>
-        <a href="" className={style.b}>更多 ></a></div>
-    </div>
+export default function Center() {
+   return <div className={style.a}>
+     <UpWord tag1="动画" tag2="番剧" number={999}/>
+     <UpWord tag1="音乐" tag2="国创" number={999}/>
+     <UpWord tag1="舞蹈" tag2="游戏" number={999}/>
+     <UpWord tag1="科技" tag2="数码" number={999}/>
+     <UpWord tag1="生活" tag2="鬼畜" number={999}/>
+     <UpWord tag1="时尚" tag2="广告" number={999}/>
+     <UpWord tag1="娱乐" tag2="影视" number={999}/>
+     <UpWord tag1="放映厅" tag2="更多 >" number={999}/>
+   </div>
 }

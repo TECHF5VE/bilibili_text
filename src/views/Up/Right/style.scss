@@ -1,5 +1,5 @@
 .a{
-    width: 180px;
+    width: 15%;
     display: flex;
     margin-left: 30px;
     justify-content: space-between;
@@ -8,11 +8,15 @@
     color: black;
     text-decoration: none;
     display: flex;
-    font-size: small;
-    width: 70px;
-    height: 30px;
+    font-size: smaller;
+    width: 60px;
+    height: 29px;
+}
+.b img{
+    margin-right: 5px;
 }
 
 .c{
     height: 30px;
+
 }

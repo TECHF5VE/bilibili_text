@@ -1,0 +1,78 @@
+.box {
+  width: 23%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.picture {
+  width: 100%;
+  height: 120px;
+}
+.title{
+  width: 23px;
+  height: 23px;
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 160px;
+  background-color:rgba(#000000,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+}
+.fontSize{
+  font-size: 14px;
+}
+.noHidden{
+  width: 190px;
+}
+.img{
+  width: 190px;
+  height: 120px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.hidden {
+  width: 190px;
+  position: absolute;
+  margin-top: -120px;
+}
+:hover.hidden {
+  transition: 0.3s;
+  opacity: 0;
+}
+:hover.title{
+  opacity: 1;
+}
+.icon1 {
+  margin-top: -20px;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 14px;
+}
+.icon2 {
+  margin-top: -20px;
+  margin-left: 70px;
+  color: white;
+  position: absolute;
+  font-size: 14px;
+}
+.txt {
+  width: 75%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dir {
+  color: black;
+  font-size: 12px;
+}
+.tip {
+  color: rgb(141, 141, 141);
+  font-size: smaller;
+}

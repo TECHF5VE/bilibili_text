@@ -1,0 +1,55 @@
+.box{
+  width: 206px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.picture{
+  width: 206px;
+  height: 120px;
+}
+.hidden{
+  width: 190px;
+  height: 120px;
+  border-radius: 7px;
+  overflow: hidden;
+  position: absolute;
+  margin-left:-190px;
+}
+:hover.hidden{
+  transition: 0.3s;
+  opacity:0;
+}
+.icon{
+  margin-top: -20px;
+  margin-left: 10px;
+  color: white;
+  position: absolute;
+  font-size: 14px;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.img{
+  width: 40px;
+  height: 40px;
+}
+.txt{
+  width: 150px;
+}
+.text{
+  font-size: 16px;
+  color: black;
+}
+.dir{
+  color: black;
+  font-size: 12px;
+  line-height: 16px;
+}
+.tip{
+  color: rgb(141, 141, 141);
+  line-height: 33px;
+  font-size: smaller
+}

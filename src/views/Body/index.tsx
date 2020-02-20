@@ -1,34 +1,34 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import First from "./First";
-import Second from "./BaiNianJi";
-import Third from "./Third";
+import First from "./Extension";
+import Second from "./NewYear";
+import Third from "./Live";
 import Top from "./Top";
-import Fourth from "./Fourth";
-import Sixth from "./Sixth";
-import Eighth from "./Sixth";
-import Ninth from "./Sixth";
-import Tenth from "./Sixth";
-import Eleventh from "./Sixth";
-import Thirteenth from "./Sixth";
-import Fourteenth from "./Sixth";
-import Fifteenth from "./Sixth";
-import Sixteenth from "./Sixth";
-import Seventeenth from "./Sixth";
-import Eighteenth from "./Sixth";
-import Nineteenth from "./Sixth";
-import TwentyFirst from "./Sixth";
-import TwentySecond from "./Sixth";
-import TwentyThird from "./Sixth";
-import TwentyFourth from "./Sixth";
-import TwentyFifth from "./TwentyFifth";
-import Fifth from "./Fifth";
-import Twelfth from "./Fifth";
-import Seventh from "./Seventh";
-import Twentieth from "./Twentieth";
+import Fourth from "./Animation";
+import Sixth from "./FolkOperaDynamic";
+import Eighth from "./FolkOperaDynamic";
+import Ninth from "./FolkOperaDynamic";
+import Tenth from "./FolkOperaDynamic";
+import Eleventh from "./FolkOperaDynamic";
+import Thirteenth from "./FolkOperaDynamic";
+import Fourteenth from "./FolkOperaDynamic";
+import Fifteenth from "./FolkOperaDynamic";
+import Sixteenth from "./FolkOperaDynamic";
+import Seventeenth from "./FolkOperaDynamic";
+import Eighteenth from "./FolkOperaDynamic";
+import Nineteenth from "./FolkOperaDynamic";
+import TwentyFirst from "./FolkOperaDynamic";
+import TwentySecond from "./FolkOperaDynamic";
+import TwentyThird from "./FolkOperaDynamic";
+import TwentyFourth from "./FolkOperaDynamic";
+import TwentyFifth from "./Recommend";
+import Fifth from "./FolkOpera";
+import Twelfth from "./FolkOpera";
+import Seventh from "./Cartoon";
+import Twentieth from "./SpecialColumn";
 
 export default function Body() {
-  return <div className={style.a}>
+  return<div className={style.a}>
     <Top />
     <First />
     <Second />
