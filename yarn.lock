@@ -7386,9 +7386,10 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "http://registry.npm.taobao.org/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@3.1.4:
-  version "3.1.4"
-  resolved "http://registry.npm.taobao.org/typescript/download/typescript-3.1.4.tgz#c74ef7b3c2da65beff548b903022cb8c3cd997ed"
+typescript@3.3.0:
+  version "3.3.0-dev.20190126"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.3.0-dev.20190126.tgz?cache=0&sync_timestamp=1582183021330&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.3.0-dev.20190126.tgz#7f34f10994e768905c827bbebe7b9de9366cfcab"
+  integrity sha1-fzTxCZTnaJBcgnu+vnud6TZs/Ks=
 
 typings-for-css-modules-loader@^1.7.0:
   version "1.7.0"

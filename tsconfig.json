@@ -11,7 +11,7 @@
       "dom"
     ],
     "skipLibCheck": true,
-		"allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "allowJs": true,
     "jsx": "react",

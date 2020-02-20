@@ -1,0 +1,40 @@
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main{
+  width: 450px;
+  margin-top: 40px;
+}
+.title{
+  font-size: x-large;
+}
+.word{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 12px;
+}
+.rememberPassword{
+  margin-left: 10px;
+}
+.lostPw{
+  list-style: none;
+  color: skyblue;
+}
+.input{
+  margin-top: 30px;
+}
+.button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.buttonOne{
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+}
