@@ -3,7 +3,7 @@ import * as style from "./style.scss";
 import Top from "./Top";
 import img1 from "../img1.jpg";
 import img2 from "./img1.png";
-import { CounterContext } from "../CounterContext"
+import CounterContext from "../CounterContext"
 
 
 function CounterConsumer() {
