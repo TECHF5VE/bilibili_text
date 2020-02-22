@@ -2,14 +2,14 @@ import React from "react";
 import * as style from "./style.scss";
 import { Button } from "antd";
 import img from "./img.png";
-import { CounterContext } from "../../CounterContext";
+import CounterContext from "../../CounterContext";
 import { Input } from 'antd';
 
 const { Search } = Input;
 export default function Top(props: { num: number }) {
   const { list, setList } = React.useContext(CounterContext);
   const removeAll = React.useCallback(() => { setList([]) },[setList])
-  const temp=['']
+  const [temp, setTemp] = React.useState<string[]>([]);
   const [inputValue, setInputValue] = React.useState('');
   const handleValue = React.useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value)
@@ -36,16 +36,8 @@ export default function Top(props: { num: number }) {
 
   // 返回搜索结果
   const handleResult = React.useCallback(() => {
-    list.map((item: string) => {
-      if (item.includes(inputValue)) {
-        temp.push(item)
-      }
-    });
-    temp.shift()
-    console.log(temp)
-    setList(temp)
-    console.log(list)
-  }, [inputValue, list, setList, temp])
+    setTemp(list.filter(v => v.includes(inputValue)));
+  }, [inputValue, list]);
   return <div className={style.box}>
     <div className={style.left}>
       <img className={style.img} src={img} width="30px" height="30px" /><span>稍后再看 ({props.num}/100)</span>
