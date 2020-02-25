@@ -1,7 +1,7 @@
-import { ExampleUserPostRequest } from './example/user/post/request';
-import { ExampleUserPostResponse } from './example/user/post/response';
+import { ExampleUserPostRequest } from './user/post/request';
+import { ExampleUserPostResponse } from './user/post/response';
 export default interface Api {
-  'example/user': {
+  'user': {
     post: {
       request: ExampleUserPostRequest;
       response: ExampleUserPostResponse;
