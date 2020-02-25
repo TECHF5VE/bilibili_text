@@ -4,7 +4,7 @@
   - 熟悉 https 原理
   - 熟悉 http 请求响应组成
   - 熟悉常见的 header
-  - 熟悉 fetch 等 api 与异步操作(包括 promise)
+  - 熟悉 fetch 等 api 与异步操作(包括 promise)  
   - 熟悉 reac 异步渲染理念(可选)
 - 编写登陆注册页
   - 与后端商讨 API
