@@ -1,9 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
-import App from "./views/App";
+import Demo from './useFetch/Demo';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Demo />, document.getElementById('root'));
 
 
 registerServiceWorker();
