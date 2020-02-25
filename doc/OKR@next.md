@@ -1,5 +1,18 @@
 # OKR@next
 
+- 进一步强化合作观念
+  - 不懂的问题可以相互讨论请教, 学得快的同学多照顾学得慢的同学
+  - 张同学可以分配一些任务给朱同学做
+- 改进 react-template
+  - tslint 迁移至 eslint
+  - 添加 prettier 及有关配置
+  - 全项目 ts 化
+  - 规范化 package.json
+  - 建议分分支分 pr 提交, 这样可以接受一部分或拒绝一部分
+- 进一步加强版本控制与迭代
+  - 学习和利用 [changelog](https://keepachangelog.com/en/1.0.0/)
+  - 打 git tag
+  - 根据 semver 规范控制 package.json 里的 version
 - 熟悉 http 请求响应流程
   - 熟悉 https 原理
   - 熟悉 http 请求响应组成
