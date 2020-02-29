@@ -28,3 +28,8 @@
   - 对接后端, 上线, 改进与维护
   - 使用 react 异步渲染理念, 最大限度利用 react 异步调度(可选)
 - 首页导航栏支持拖拽(类似于 B 站)
+- 学习设计理念
+  - 了解设计四大基本原则(推荐书: 写给大家看的设计书)
+  - 学习 [ant design 设计理念](https://ant.design/docs/spec/introduce-cn) 与 [ant design motion 设计理念](https://motion.ant.design/language/basic-cn)
+  - 学习其他框架, 如 element, material 等的设计理念
+  - 谈谈自己对设计的看法
