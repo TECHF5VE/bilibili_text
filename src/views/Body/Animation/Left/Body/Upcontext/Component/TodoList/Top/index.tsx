@@ -38,7 +38,7 @@ export default function Top(props: { num: number }) {
   const handleResult = React.useCallback(() => {
     setTemp(list.filter(v => v.includes(inputValue)));
   }, [inputValue, list]);
-  return <div className={style.box}>
+   return <div className={style.box}>
     <div className={style.left}>
       <img className={style.img} src={img} width="30px" height="30px" /><span>稍后再看 ({props.num}/100)</span>
     </div>
