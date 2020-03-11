@@ -6,5 +6,6 @@
  */
 
 export interface ExampleUserPostResponse {
+  json(json: any);
   success: boolean;
 }

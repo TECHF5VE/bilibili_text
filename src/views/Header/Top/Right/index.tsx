@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as style from './style.scss';
 import Upload from './Upload';
 import OpenGitHub from './OpenGitHub';
-import { Link } from 'react-router-dom';
+import { Link } from 'web-router';
 import { Avatar } from 'antd';
 
 export default function Right() {

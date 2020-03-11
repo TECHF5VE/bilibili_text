@@ -2,7 +2,7 @@ import React from "react";
 import * as style from "./style.scss";
 import Header from "../SignIn/Header";
 import { Input, Select, Button } from "antd";
-import { Link } from "react-router-dom";
+import { Link } from "web-router";
 
 const InputGroup = Input.Group;
 const { Option } = Select;
