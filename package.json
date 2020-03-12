@@ -13,6 +13,7 @@
   "dependencies": {
     "antd": "3.17.0",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.2.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "swr": "^0.1.18",
