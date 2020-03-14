@@ -5,7 +5,6 @@
  * and run json-schema-to-interface to regenerate this file.
  */
 
-export interface ExampleUserPostResponse {
-  json(json: any);
+export interface ApiUserLoginResponse {
   success: boolean;
 }
