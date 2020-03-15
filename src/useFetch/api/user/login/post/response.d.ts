@@ -5,11 +5,6 @@
  * and run json-schema-to-interface to regenerate this file.
  */
 
-export interface ApiUserLoginRequest {
-  userName: string;
-  password: number;
-  /**
-   * Age in years
-   */
-  phoneNumber: number;
+export interface UserLoginPostResponse {
+  success: boolean;
 }
