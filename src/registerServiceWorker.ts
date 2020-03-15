@@ -14,6 +14,7 @@ const isLocalhost = Boolean(
     // [::1] is the IPv6 localhost address.
     window.location.hostname === '[::1]' ||
     // 127.0.0.1/8 is considered localhost for IPv4.
+    // eslint-disable-next-line @typescript-eslint/prefer-regexp-exec
     window.location.hostname.match(
       /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
     )
@@ -94,7 +95,7 @@ function checkValidServiceWorker(swUrl: string) {
       // Ensure service worker exists, and that we really are getting a JS file.
       if (
         response.status === 404 ||
-        response.headers.get('content-type')!.indexOf('javascript') === -1
+        !response.headers.get('content-type')!.includes('javascript')
       ) {
         // No service worker found. Probably a different app. Reload the page.
         navigator.serviceWorker.ready.then(registration => {
