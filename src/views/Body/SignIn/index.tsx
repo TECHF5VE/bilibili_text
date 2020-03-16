@@ -6,13 +6,13 @@ import Header from "./Header";
 import useFetch from "src/useFetch";
 
 export default function SignIn(){
-  const { data, revalidate } = useFetch({
-    path: 'user',
+   const { data, revalidate } = useFetch({
+    path: 'example/user',
     method: 'post',
     request: { firstName: 'zgabn', lastName: 'vtrg' }
   })
-  const first=JSON.stringify(data);
   console.log(data);
+
   const alertWord=React.useCallback(()=>{
     alert("忘了就不登了！！")
   },[])
@@ -20,7 +20,7 @@ export default function SignIn(){
     <Header tag="登 录" />
     <div className={style.main}>
       <span className={style.title}>密码登录</span>
-      <Input placeholder="账号/邮箱" size="large" className={style.input} value={first} />
+      <Input placeholder="账号/邮箱" size="large" className={style.input} />
       <Input type="password" placeholder="密码" size="large" className={style.input} />
       <div className={style.word}>
         <div className={style.rememberPassword}>现在还记不住密码呦！！</div>
