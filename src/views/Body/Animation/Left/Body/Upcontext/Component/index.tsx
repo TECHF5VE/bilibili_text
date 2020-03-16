@@ -3,7 +3,7 @@ import * as style from "./style.scss";
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import { Icon, Tooltip } from "antd";
-import { CounterContext } from "./CounterContext";
+import CounterContext from "./CounterContext";
 
 export default function Component(props: { value: string }) {
   const { list, setList } = React.useContext(CounterContext);

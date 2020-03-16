@@ -18,11 +18,7 @@
     "project": "tsconfig.json",
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "react",
-    "react-hooks"
-  ],
+  "plugins": ["@typescript-eslint", "react", "react-hooks"],
   "rules": {
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": "error",
@@ -36,10 +32,6 @@
       {
         "accessibility": "explicit"
       }
-    ],
-    "@typescript-eslint/indent": [
-      "error",
-      2
     ],
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/member-delimiter-style": [
@@ -68,18 +60,12 @@
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-namespace-keyword": "error",
     "@typescript-eslint/quotes": "off",
-    "@typescript-eslint/semi": [
-      "off",
-      null
-    ],
+    "@typescript-eslint/semi": ["off", null],
     "@typescript-eslint/triple-slash-reference": "error",
     "@typescript-eslint/type-annotation-spacing": "off",
     "@typescript-eslint/unified-signatures": "error",
     "arrow-body-style": "error",
-    "arrow-parens": [
-      "off",
-      "as-needed"
-    ],
+    "arrow-parens": ["off", "as-needed"],
     "camelcase": "error",
     "comma-dangle": "off",
     "complexity": "off",
@@ -89,7 +75,7 @@
     "eol-last": "off",
     "eqeqeq": [
       "error",
-      "smart"//
+      "smart" //
     ],
     "guard-for-in": "error",
     "id-blacklist": [
@@ -107,10 +93,7 @@
     "id-match": "error",
     "import/order": "off",
     "linebreak-style": "off",
-    "max-classes-per-file": [
-      "error",
-      1
-    ],
+    "max-classes-per-file": ["error", 1],
     "max-len": "off",
     "max-lines": "off",
     "new-parens": "off",
@@ -136,6 +119,7 @@
     ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
+    "react/no-children-prop": "off",
     "no-throw-literal": "error",
     "no-trailing-spaces": "off",
     "no-undef-init": "error",
@@ -150,10 +134,7 @@
     "no-unused-labels": "error",
     "no-var": "error",
     "object-shorthand": "error",
-    "one-var": [
-      "error",
-      "never"
-    ],
+    "one-var": ["error", "never"],
     "prefer-arrow/prefer-arrow-functions": "off",
     "prefer-const": "error",
     "quote-props": "off",

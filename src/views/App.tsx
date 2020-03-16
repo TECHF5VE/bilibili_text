@@ -6,9 +6,9 @@ import "./base.scss";
 import Foot from './Foot';
 import Navigation from './Navigation';
 import Picture from './Picture';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Router, Switch, Route } from 'web-router';
 import TodoList from './Body/Animation/Left/Body/Upcontext/Component/TodoList';
-import { CounterContext } from './Body/Animation/Left/Body/Upcontext/Component/CounterContext';
+import CounterContext from './Body/Animation/Left/Body/Upcontext/Component/CounterContext';
 import SignIn from './Body/SignIn';
 import SignOn from './Body/SignOn';
 
@@ -30,13 +30,13 @@ function defaultTop() {
     <Foot />
   </>
 }
-function signIn(){
+function signIn() {
   return <>
     <SignIn />
     <Foot />
   </>
 }
-function signOn(){
+function signOn() {
   return <>
     <SignOn />
     <Foot />
@@ -45,15 +45,19 @@ function signOn(){
 export default function App() {
   const [list, setList] = React.useState([]);
   return <CounterContext.Provider value={{ list, setList }}>
-    <BrowserRouter>
+    <Router>
       <Switch>
-        <Route path="/whachLater/*" component={defaultTop} />
-        <Route path="/homepage/" component={Bodys} />
-        <Route path="/signIn/" component={signIn} />
-        <Route path="/signOn/" component={signOn} />
-        <Route component={Bodys} />
+        <Route path="/whachLater/">
+          {defaultTop()}
+        </Route>
+        <Route path="/homepage/">{Bodys()}</Route>
+        <Route path="/signIn/">{signIn()}</Route>
+        <Route path="/signOn/">{signOn()}</Route>
+        <Route>
+          {Bodys()}
+        </Route>
       </Switch>
-    </BrowserRouter>
+    </Router>
   </CounterContext.Provider>
 }
 

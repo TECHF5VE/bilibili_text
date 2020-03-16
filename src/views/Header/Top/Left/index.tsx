@@ -3,7 +3,7 @@ import * as style from "./style.scss"
 import Game from "./Game"
 import Cartoon from "./Cartoon"
 import BaiNian from "./BaiNian";
-import { Link } from "react-router-dom";
+import { Link } from "web-router";
 
 export default function Left() {
   return <div className={style.a}>

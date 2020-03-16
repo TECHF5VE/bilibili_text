@@ -1,11 +1,24 @@
 # OKR@next
 
+- 进一步强化合作观念
+  - 不懂的问题可以相互讨论请教, 学得快的同学多照顾学得慢的同学
+  - 张同学可以分配一些任务给朱同学做
+- 改进 react-template
+  - tslint 迁移至 eslint
+  - 添加 prettier 及有关配置
+  - 全项目 ts 化
+  - 规范化 package.json
+  - 建议分分支分 pr 提交, 这样可以接受一部分或拒绝一部分
+- 进一步加强版本控制与迭代
+  - 学习和利用 [changelog](https://keepachangelog.com/en/1.0.0/)
+  - 打 git tag
+  - 根据 semver 规范控制 package.json 里的 version
 - 熟悉 http 请求响应流程
   - 熟悉 https 原理
   - 熟悉 http 请求响应组成
   - 熟悉常见的 header
-  - 熟悉 fetch 等 api 与异步操作(包括 promise)
-  - 熟悉 reac 异步渲染理念(可选)
+  - 熟悉 fetch 等 api 与异步操作(包括 promise)  
+  - 熟悉 react 异步渲染理念(可选)
 - 编写登陆注册页
   - 与后端商讨 API
   - 编写 json schema
@@ -15,3 +28,8 @@
   - 对接后端, 上线, 改进与维护
   - 使用 react 异步渲染理念, 最大限度利用 react 异步调度(可选)
 - 首页导航栏支持拖拽(类似于 B 站)
+- 学习设计理念
+  - 了解设计四大基本原则(推荐书: 写给大家看的设计书)
+  - 学习 [ant design 设计理念](https://ant.design/docs/spec/introduce-cn) 与 [ant design motion 设计理念](https://motion.ant.design/language/basic-cn)
+  - 学习其他框架, 如 element, material 等的设计理念
+  - 谈谈自己对设计的看法

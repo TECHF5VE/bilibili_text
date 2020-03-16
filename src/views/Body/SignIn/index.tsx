@@ -1,10 +1,18 @@
 import React from "react";
 import * as style from "./style.scss";
 import { Input, Button } from "antd";
-import { Link } from "react-router-dom";
+import { Link } from "web-router";
 import Header from "./Header";
+import useFetch from "src/useFetch";
 
 export default function SignIn(){
+   const { data, revalidate } = useFetch({
+    path: 'example/user',
+    method: 'post',
+    request: { firstName: 'zgabn', lastName: 'vtrg' }
+  })
+  console.log(data);
+
   const alertWord=React.useCallback(()=>{
     alert("忘了就不登了！！")
   },[])
@@ -19,7 +27,7 @@ export default function SignIn(){
         <a className={style.lostPw} onClick={alertWord}>忘记密码？！</a>
       </div>
       <div className={style.button}>
-        <Button type="primary" className={style.buttonOne}>登 录</Button>
+        <Button type="primary" className={style.buttonOne} onClick={revalidate}>登 录</Button>
         <Button className={style.buttonOne}><Link to="/signOn/">注 册</Link></Button>
       </div>
     </div>

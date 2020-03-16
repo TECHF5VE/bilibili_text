@@ -6,9 +6,9 @@ import { Anchor } from "antd";
 const { Link } = Anchor;
 export default function Navigation() {
   return <div className={style.main}>
-    <Anchor offsetTop={80}>
+    <Anchor offsetTop={80} >
       <div className={style.box}>
-        <Link className={style.link} href="#Third" title="直播" />
+        <Link className={style.link}  title="直播" />
         <Link className={style.link} href="#Fourth" title="动画" />
         <Link className={style.link} href="#Fifth" title="番剧" />
         <Link className={style.link} href="#Seventh" title="漫画" />
