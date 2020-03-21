@@ -43,46 +43,46 @@ export default function Top() {
     </div>
     <div className={style.right}>
       <div className={style.line1}>
-       
+
         <div className={style.action} >
-          <a  >
-          <Upwait />
-          <img src={img} className={style.icon2}  width="170px" />
-        </a>
+          <a >
+            <Upwait />
+            <img src={img} className={style.icon2} width="170px" />
+          </a>
+        </div>
+        <div className={style.action}>
+          <a >
+            <Upwait />
+            <img src={img} className={style.icon2} width="170px" />
+          </a>
+        </div>
+        <div className={style.action}>
+          <a >
+            <Upwait />
+            <img src={img} className={style.icon2} width="170px" />
+          </a>
+        </div>
       </div>
-      <div className={style.action}>
-        <a >
-        <Upwait />
-          <img src={img} className={style.icon2}  width="170px"/>
-        </a>
-      </div>
-      <div className={style.action}>
-        <a >
-        <Upwait />
-          <img src={img} className={style.icon2} width="170px"/>
-        </a>
+      <div className={style.line1}>
+        <div className={style.action}>
+          <a>
+            <Upwait />
+            <img src={img} className={style.icon2} width="170px" />
+          </a>
+        </div>
+        <div className={style.action}>
+          <a >
+            <Upwait />
+            <img src={img} className={style.icon2} width="170px" />
+          </a>
+        </div>
+        <div className={style.action}>
+          <a>
+            <Upwait />
+            <img src={img} className={style.icon2} width="170px" />
+          </a>
+        </div>
       </div>
     </div>
-    <div className={style.line1}>
-      <div className={style.action}>
-        <a>
-        <Upwait />
-          <img src={img} className={style.icon2}  width="170px"/>
-        </a>
-      </div>
-      <div className={style.action}>
-        <a >
-        <Upwait />
-          <img src={img} className={style.icon2}  width="170px"/>
-        </a>
-      </div>
-      <div className={style.action}>
-        <a>
-        <Upwait />
-          <img src={img} className={style.icon2}  width="170px"/>
-        </a>
-      </div>
-    </div>
-  </div>
   </div >
 }

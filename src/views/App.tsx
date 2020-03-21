@@ -12,7 +12,7 @@ import CounterContext from './Body/Animation/Left/Body/Upcontext/Component/Count
 import SignIn from './Body/SignIn';
 import SignOn from './Body/SignOn';
 
-function Bodys() {
+export function Bodys() {
   return <div >
     <Picture />
     <Header />
@@ -30,7 +30,7 @@ function defaultTop() {
     <Foot />
   </>
 }
-function signIn() {
+export function signIn() {
   return <>
     <SignIn />
     <Foot />
