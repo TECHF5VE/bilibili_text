@@ -1,9 +1,7 @@
 import React from "react";
 import * as style from "./style.scss";
 
-
-// eslint-disable-next-line react/display-name
-export default function () {
+export default function Robot() {
   return <div className={style.box}>
     <div className={style.one}>
       <div className={style.ear1} />

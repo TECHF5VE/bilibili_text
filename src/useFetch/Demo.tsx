@@ -4,13 +4,12 @@ import React from 'react';
 
 export default function Demo() {
   const { data, revalidate } = useFetch({
-    path: 'example/user',
+    path: 'user/login',
     method: 'post',
-    request: { firstName: 'vyg', lastName: 'hug' }
+    request: { userName: 'vyg', password: 123456 }
     }
   )
-  console.log(data);
-  
+  console.log(data?.success);
   return (
     <>
       <pre>{JSON.stringify(data)}</pre>

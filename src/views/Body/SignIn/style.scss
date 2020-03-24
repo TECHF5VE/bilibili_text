@@ -19,6 +19,8 @@
 }
 .rememberPassword{
   margin-left: 10px;
+  display: flex;
+  align-items: center;
 }
 .lostPw{
   list-style: none;
@@ -37,4 +39,13 @@
   width: 150px;
   height: 40px;
   font-size: 16px;
+}
+.span{
+  width: 14px;
+  height: 13px;
+  padding: 0 1px;
+  margin-right: 3px;
+  line-height: 13px;
+  background-color: rgb(92, 209, 255);
+  border-radius: 3px;
 }
