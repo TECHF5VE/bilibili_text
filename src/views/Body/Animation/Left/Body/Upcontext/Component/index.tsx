@@ -7,15 +7,6 @@ import CounterContext from "./CounterContext";
 
 export default function Component(props: { value: string }) {
   const { list, setList } = React.useContext(CounterContext);
-  const [hover, setHover] = React.useState('稍后再看');
-  const changeContent = React.useCallback(() => {
-    list.map((item: string) => {
-      if (item === props.value) {
-        setHover("已添加")
-      }
-    })
-  }, [list, props.value])
-
   const addListItem = React.useCallback(() => setList([...list, props.value]), [list, props.value, setList]);
   return <div className={style.box}>
     <a className={style.picture}>
@@ -27,8 +18,8 @@ export default function Component(props: { value: string }) {
       </div>
       <div className={style.hidden}>
         <div className={style.img}><img src={img1} width="190px" height="120px" /></div>
-        <div onMouseOver={changeContent}>
-          <Tooltip placement="topRight" title={hover} mouseEnterDelay={0} className={style.fontSize} >
+        <div>
+          <Tooltip placement="topRight" title={list.includes(props.value)?'已添加':'稍后再看'} mouseEnterDelay={0} className={style.fontSize} >
             <Icon type="play-circle" onClick={addListItem} className={style.title} />
           </Tooltip>
         </div>

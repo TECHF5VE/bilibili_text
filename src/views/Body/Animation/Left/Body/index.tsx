@@ -3,7 +3,6 @@ import * as style from "./style.scss";
 import Component from "./Upcontext/Component";
 
 export default function Body() {
-  
   return <div className={style.main}>
     <div className={style.line}>
       <Component value="今天一天"/>
