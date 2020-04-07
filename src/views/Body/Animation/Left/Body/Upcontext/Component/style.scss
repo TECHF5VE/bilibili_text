@@ -39,9 +39,9 @@
   width: 190px;
   position: absolute;
   margin-top: -120px;
+  transition: 0.3s;
 }
 :hover.hidden {
-  transition: 0.3s;
   opacity: 0;
 }
 :hover.title{

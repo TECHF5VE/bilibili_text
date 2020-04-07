@@ -11,31 +11,31 @@ export default function Top() {
       <Carousel autoplay={true} dots={true}>
         <div className={style.picture1}>
           <a >
-            <p>这是一个p元素，给它设置了绝对定位</p>
+            <p className={style.tip}>这是一个p元素，给它设置了绝对定位</p>
             {/* <img src={img} className={style.icon1} /> */}
           </a>
         </div>
         <div className={style.picture2}>
           <a >
-            <p>让它做这张图片的description部分</p>
+            <p className={style.tip}>让它做这张图片的description部分</p>
             {/* <img src={img} className={style.icon1} /> */}
           </a>
         </div>
         <div className={style.picture3}>
           <a >
-            <p>给它设置top，让它下来一点</p>
+            <p className={style.tip}>给它设置top，让它下来一点</p>
             {/* <img src={img} className={style.icon1} /> */}
           </a>
         </div>
         <div className={style.picture4}>
           <a >
-            <p>再给他设置left，它却没了</p>
+            <p className={style.tip}>再给他设置left，它却没了</p>
             {/* <img src={img} className={style.icon1} /> */}
           </a>
         </div>
         <div className={style.picture5}>
           <a >
-            <p>就设置了margin-left，他又可以了</p>
+            <p className={style.tip}>就设置了margin-left，他又可以了</p>
             {/* <img src={img} className={style.icon1} /> */}
           </a>
         </div>
