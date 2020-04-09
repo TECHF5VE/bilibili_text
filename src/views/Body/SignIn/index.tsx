@@ -8,7 +8,7 @@ import useFetch from "src/useFetch";
 export default function SignIn() {
   const storage = window.localStorage;
   const [remPassword, setRemPassword] = React.useState(false);
-  const [inputValue, setInputValue] = React.useState('');
+  const [inputValue, setInputValue] = React.useState(null);
   const [password, setPassword] = React.useState('');
 
   // 数据请求
@@ -63,8 +63,11 @@ export default function SignIn() {
     <Header tag="登 录" />
     <div className={style.main}>
       <span className={style.title}>密码登录</span>
-      <Input placeholder="账号/邮箱" size="large" className={style.input} onChange={handleValue} value={inputValue} />
+      <Input placeholder="电话号码" size="large" className={style.input} onChange={handleValue} value={inputValue} />
+      {inputValue&&isNaN(inputValue)&&<div className={style.tip}>请输入数字</div>}
+      {inputValue&&(inputValue.length > 11)&&<div className={style.tip}>请输入正确的电话号码</div>}
       <Input type="password" placeholder="密码" size="large" className={style.input} onChange={handlePassword} value={password} />
+      {password.length < 6 && password.length > 0 && <div className={style.tip}>密码长度不足</div>}
       <div className={style.word}>
         <div className={style.rememberPassword}>
           <div className={style.span} onClick={handleCheck}>{remPassword && <Icon type="check" />}</div>记住密码</div>

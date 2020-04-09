@@ -10,7 +10,7 @@ interface Request<
   R = 'request' extends keyof Api[Path][Method] ? 'request' : never
 > {
   path: Path;
-  method: Method & HttpMethod;
+  method: HttpMethod;
   request: R extends keyof Api[Path][Method] ? Api[Path][Method][R] : never;
 }
 
