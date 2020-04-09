@@ -1,0 +1,102 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+}
+.list {
+  position: absolute;
+  z-index: 1;
+  width: 4200px;
+  height: 400px;
+  left: 0;
+  transition: 0.5s;
+}
+.list div {
+  float: left;
+  width: 600px;
+  height: 400px;
+}
+.buttons {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 230px;
+  width: 140px;
+  height: 10px;
+}
+.buttons span {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #333;
+}
+.prev:hover {
+  background-color: RGBA(0, 0, 0, 0.7);
+}
+.next:hover {
+  background-color: RGBA(0, 0, 0, 0.7);
+}
+.container:hover .prev {
+  display: block;
+}
+.container:hover .next {
+  display: block;
+}
+.prev {
+  left: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 35px;
+  position: absolute;
+  z-index: 2;
+  top: 180px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: RGBA(0, 0, 0, 0.3);
+}
+.next {
+  right: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 35px;
+  position: absolute;
+  z-index: 2;
+  top: 180px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: RGBA(0, 0, 0, 0.3);
+  transition: 1s;
+}
+.item1 {
+  background-color: aqua;
+}
+.item2 {
+  background-color: rgb(228, 168, 113);
+}
+.item3 {
+  background-color: rgb(140, 109, 212);
+}
+.item4 {
+  background-color: rgb(147, 233, 166);
+}
+.item5 {
+  background-color: rgb(35, 155, 155);
+}
+.item6 {
+  background-color: rgb(187, 54, 116);
+}
+.item7 {
+  background-color: rgb(228, 168, 113);
+}
