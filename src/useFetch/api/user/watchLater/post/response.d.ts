@@ -5,7 +5,4 @@
  * and run json-schema-to-interface to regenerate this file.
  */
 
-export interface UserWatchLaterPostResponse {
-  inter?: string[];
-  required?: any;
-}
+export type UserWatchLaterPostResponse = any[];

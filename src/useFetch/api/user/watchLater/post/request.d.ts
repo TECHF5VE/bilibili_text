@@ -6,6 +6,5 @@
  */
 
 export interface UserWatchLaterPostRequest {
-  inter?: string[];
-  required?: any;
+  id: string;
 }
