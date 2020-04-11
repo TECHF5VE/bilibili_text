@@ -1,19 +1,28 @@
 import useFetch from '.';
 import { Button } from 'antd';
-import React from 'react';
+import React, { Suspense } from 'react';
 
-export default function Demo() {
+export function Demo() {
   const { data, revalidate } = useFetch({
-    path: 'user/login',
-    method: 'post',
-    request: { userName: 'vyg', password: 123456 }
+    path: 'user/watchLater',
+    method: 'get',
+    request:{}
     }
   )
-  console.log(data?.success);
   return (
-    <>
+    <><Suspense fallback={<div>loading user...</div>}>
+    <Button onClick={revalidate}>refresh</Button>
+    
       <pre>{JSON.stringify(data)}</pre>
-      <Button onClick={revalidate}>refresh</Button>
+      </Suspense>
     </>
   );
+}
+export default function Taxi() {
+  return <>
+  <Button>refresh</Button>
+    <Suspense fallback={<div>loading user...</div>}>
+      <Demo />
+    </Suspense>
+  </>
 }
