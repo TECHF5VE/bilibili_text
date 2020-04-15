@@ -4,8 +4,17 @@ import Top from "./Top";
 import img1 from "../img1.jpg";
 import img2 from "./img1.png";
 import useGet from "src/useGet";
+// import useFetch from "src/useFetch";
 
 export default function TodoList() {
+  // const [paths,setPaths]=React.useState('/user/watchLater')
+  // const {datas,revalidata}=useFetch({
+
+  // })
+  // const removeAll=function(){
+  //   revalidata();
+  //   setPaths(datas?.path)
+  // }
   const { data,error } = useGet('/user/watchLater')
   return <>{
   error?
@@ -15,17 +24,17 @@ export default function TodoList() {
   <div>loading...</div>
   :
    <div className={style.box}>
-      <Top num={data.item.length} value={data.item}/>
+      <Top num={data.items.length} value={data.items}/>
       <div className={style.ul}>
         <ul className={style.ul}>
-          {data.item.map((v: {}, i: number) => <li className={style.li} key={i}>{i + 1}
+          {data.items.map((v:{}, i: number) => <li className={style.li} key={i}>{i + 1}
             <div className={style.img}><img src={img1} width="170px" height="110px" /></div>
             <div className={style.content}>
               <div className={style.text}>
                 <div className={style.title}>
-                  {data.item[i].title}
+                  {data.items[i].title}
                 </div>
-                <div className={style.span}>{data.item[i].content}</div>
+                <div className={style.span}>{data.items[i].content}</div>
               </div>
               <img src={img2} width="22px" height="25px" />
             </div>
