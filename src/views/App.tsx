@@ -8,7 +8,6 @@ import Navigation from './Navigation';
 import Picture from './Picture';
 import { Router, Switch, Route } from 'web-router';
 import TodoList from './Body/Animation/Left/Body/Upcontext/Component/TodoList';
-import CounterContext from './Body/Animation/Left/Body/Upcontext/Component/CounterContext';
 import SignIn from './Body/SignIn';
 import SignOn from './Body/SignOn';
 
@@ -43,9 +42,7 @@ function signOn() {
   </>
 }
 export default function App() {
-  const [list, setList] = React.useState([]);
-  return <CounterContext.Provider value={{ list, setList }}>
-    <Router>
+  return <Router>
       <Switch>
         <Route path="/whachLater/">
           {defaultTop()}
@@ -58,7 +55,7 @@ export default function App() {
         </Route>
       </Switch>
     </Router>
-  </CounterContext.Provider>
+    
 }
 
 
