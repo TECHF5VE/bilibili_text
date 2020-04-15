@@ -5,4 +5,6 @@
  * and run json-schema-to-interface to regenerate this file.
  */
 
-export type UserWatchLaterPostResponse = any[];
+export interface UserWatchLaterAllRemovePostResponse {
+  success: boolean;
+}
