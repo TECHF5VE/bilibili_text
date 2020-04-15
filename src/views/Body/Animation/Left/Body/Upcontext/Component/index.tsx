@@ -3,8 +3,15 @@ import * as style from "./style.scss";
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import { Icon, Tooltip } from "antd";
+// import useFetch from "src/useFetch";
 
+// 每个小方块
 export default function Component() {
+// const {data,revalidate}=useFetch({
+//   path:"",
+//   method:"post",
+//   request:{id:123456,content:props.value}
+// })
   return <div className={style.box}>
     <a className={style.picture}>
       <div className={style.noHidden}>

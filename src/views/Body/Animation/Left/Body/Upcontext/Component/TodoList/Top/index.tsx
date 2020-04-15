@@ -6,7 +6,6 @@ import { Input } from 'antd';
 
 const { Search } = Input;
 export default function Top(props: { num: number ,value:[]}) {
-console.log(props.value)
 return <div className={style.box}>
     <div className={style.left}>
       <img className={style.img} src={img} width="30px" height="30px" /><span>稍后再看 ({props.num}/100)</span>
