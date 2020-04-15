@@ -5,6 +5,10 @@
  * and run json-schema-to-interface to regenerate this file.
  */
 
-export interface UserWatchLaterPostRequest {
-  id: string;
+export interface UserWatchLaterSearchPostRequset {
+  id: number;
+  /**
+   * This is the keyWord by search
+   */
+  keyWord: string;
 }
