@@ -1,0 +1,18 @@
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-top: 20px;
+}
+.title{
+  display: flex;
+  flex-direction: column;
+}
+.tip{
+  color: black;
+}
+.dir{
+  margin-top: 20px;
+  font-size: small;
+  color: rgb(163, 163, 163);
+}

@@ -10,6 +10,7 @@ import { Router, Switch, Route } from 'web-router';
 import TodoList from './Body/Animation/Left/Body/Upcontext/Component/TodoList';
 import SignIn from './Body/SignIn';
 import SignOn from './Body/SignOn';
+import PlayPage from './Body/PlayPage';
 
 export function Bodys() {
   return <div >
@@ -41,6 +42,11 @@ function signOn() {
     <Foot />
   </>
 }
+function playPage(){
+  return<>
+    <PlayPage />
+  </>
+}
 export default function App() {
   return <Router>
       <Switch>
@@ -50,6 +56,7 @@ export default function App() {
         <Route path="/homepage/">{Bodys()}</Route>
         <Route path="/signIn/">{signIn()}</Route>
         <Route path="/signOn/">{signOn()}</Route>
+        <Route path="/playPage/">{playPage()}</Route>
         <Route>
           {Bodys()}
         </Route>
