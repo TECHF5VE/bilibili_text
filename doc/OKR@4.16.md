@@ -25,7 +25,7 @@
 
 ## 注意事项
 
-- 文件目录结构
+- 播放页面文件目录结构
 
 ```
     Body
@@ -35,3 +35,11 @@
       --Right
       --Left
       --index.tsx
+```
+
+- 个人中心文件目录结构
+
+```
+    views
+    |
+    --UserInformation
