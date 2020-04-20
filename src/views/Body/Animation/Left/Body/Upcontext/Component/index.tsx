@@ -3,15 +3,15 @@ import * as style from "./style.scss";
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import { Icon, Tooltip } from "antd";
-// import useFetch from "src/useFetch";
+import useFetch from "src/useFetch";
 
 // 每个小方块
-export default function Component() {
-// const {data,revalidate}=useFetch({
-//   path:"",
-//   method:"post",
-//   request:{id:123456,content:props.value}
-// })
+export default function Component(props:{value:string}) {
+const {data,revalidate}=useFetch({
+   path:"example/user",
+   method:"post",
+  request:{id:123456,content:props.value}
+ })
   return <div className={style.box}>
     <a className={style.picture}>
       <div className={style.noHidden}>
@@ -23,7 +23,7 @@ export default function Component() {
       <div className={style.hidden}>
         <div className={style.img}><img src={img1} width="190px" height="120px" /></div>
         <div>
-          <Tooltip placement="topRight" title={'稍后再看'} mouseEnterDelay={0} className={style.fontSize} >
+          <Tooltip placement="topRight" title={data?.success?"添加成功":'稍后再看'} mouseEnterDelay={0} className={style.fontSize} >
             <Icon type="play-circle"  className={style.title} />
           </Tooltip>
         </div>
