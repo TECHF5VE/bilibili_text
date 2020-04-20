@@ -8,7 +8,7 @@ import useFetch from "src/useFetch";
 // 每个小方块
 export default function Component(props:{value:string}) {
 const {data,revalidate}=useFetch({
-   path:"example/user",
+   path:"user/watchLater/add",
    method:"post",
   request:{id:123456,content:props.value}
  })
@@ -17,14 +17,14 @@ const {data,revalidate}=useFetch({
       <div className={style.noHidden}>
         <div className={style.img}><img src={img2} id="img" width="190px" height="120px" /></div>
         <div className={style.title}>
-          <Icon type="play-circle" />
+          <Icon type="play-circle" onClick={revalidate}/>
         </div>
       </div>
       <div className={style.hidden}>
         <div className={style.img}><img src={img1} width="190px" height="120px" /></div>
         <div>
           <Tooltip placement="topRight" title={data?.success?"添加成功":'稍后再看'} mouseEnterDelay={0} className={style.fontSize} >
-            <Icon type="play-circle"  className={style.title} />
+            <Icon type="play-circle" onClick={revalidate} className={style.title} />
           </Tooltip>
         </div>
 
