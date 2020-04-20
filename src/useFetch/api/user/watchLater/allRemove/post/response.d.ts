@@ -6,5 +6,5 @@
  */
 
 export interface UserWatchLaterAllRemovePostResponse {
-  success: boolean;
+  path: string;
 }
