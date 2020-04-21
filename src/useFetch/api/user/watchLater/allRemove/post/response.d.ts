@@ -6,5 +6,10 @@
  */
 
 export interface UserWatchLaterAllRemovePostResponse {
+<<<<<<< HEAD
+  path: SetStateAction<string>;
+  success: boolean;
+=======
   path: string;
+>>>>>>> 2f42d32e2b68bcc887d044fcb2a892f7bc84add3
 }

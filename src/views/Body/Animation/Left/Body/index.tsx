@@ -5,16 +5,16 @@ import Component from "./Upcontext/Component";
 export default function Body() {
   return <div className={style.main}>
     <div className={style.line}>
-      <Component />
-      <Component />
-      <Component />
-      <Component />
+      <Component value="赋值"/>
+      <Component  value="赋值"/>
+      <Component  value="赋值"/>
+      <Component  value="赋值"/>
     </div>
     <div className={style.line}>
-      <Component />
-      <Component />
-      <Component />
-      <Component />
+      <Component  value="赋值"/>
+      <Component  value="赋值"/>
+      <Component  value="赋值"/>
+      <Component  value="赋值"/>
     </div>
   </div>
 }
