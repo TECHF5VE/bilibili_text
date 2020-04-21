@@ -3,7 +3,12 @@ import * as style from "./style.scss";
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import { Icon, Tooltip } from "antd";
+<<<<<<< HEAD
 import useFetch from "src/useFetch";
+=======
+import { Link } from "web-router";
+// import useFetch from "src/useFetch";
+>>>>>>> 2f42d32e2b68bcc887d044fcb2a892f7bc84add3
 
 // 每个小方块
 export default function Component(props:{value:string}) {
@@ -13,7 +18,7 @@ const {data,revalidate}=useFetch({
   request:{id:123456,content:props.value}
  })
   return <div className={style.box}>
-    <a className={style.picture}>
+    <Link to="/playPage/" className={style.picture}>
       <div className={style.noHidden}>
         <div className={style.img}><img src={img2} id="img" width="190px" height="120px" /></div>
         <div className={style.title}>
@@ -31,7 +36,7 @@ const {data,revalidate}=useFetch({
         <div className={style.icon1}><Icon type="team" />999</div>
         <div className={style.icon2}><Icon type="like" />999</div>
       </div>
-    </a>
+    </Link>
     <a>
       <div className={style.txt}>
         <span className={style.dir}>一些有用的介绍</span><br />

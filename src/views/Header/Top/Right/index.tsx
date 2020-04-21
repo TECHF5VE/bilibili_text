@@ -15,7 +15,7 @@ export default function Right() {
         <span>·</span>
         <Link to="/signOn/"><span>注册</span></Link>
       </div>
-      <Link to="/whachLater/" className={style.b}>
+      <Link to="/whachLater/" target="_blank" className={style.b}>
         稍后再看
       </Link>
       <a className={style.b}>

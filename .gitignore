@@ -33,3 +33,6 @@ yarn-error.log*
 # JB cache
 /.idea
 node_modules
+
+# Build file
+build
