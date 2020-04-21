@@ -1,5 +1,4 @@
 import useSWR from "swr";
-import React from "react";
 
 // get request ,If you want to use "get", please export this instead of using the above 
 async function fetche(path: string) {
@@ -8,23 +7,10 @@ async function fetche(path: string) {
 }
 export default function useGet(path: string) {
   const { data, error } = useSWR(path, fetche)
+  let datas=data
   return {
-    data,
+    datas,
     error
   }
 }
 
-// 暂时不得用
-export function Examine(props: { datas: any, errors: any, children: any }) {
-  return <>
-    {
-      !props.datas ?
-        <div>loading...</div>
-        :
-        props.errors ?
-          <div>failed to load</div>
-          :
-          <>{props.children}</>
-    }
-  </>
-}

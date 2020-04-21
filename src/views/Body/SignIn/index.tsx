@@ -1,7 +1,7 @@
 import React from "react";
 import * as style from "./style.scss";
 import { Input, Button, Icon, } from "antd";
-import { Link, Redirect } from "web-router";
+import { Link, Redirect } from "react-router-dom";
 import Header from "./Header";
 import useFetch from "src/useFetch";
 

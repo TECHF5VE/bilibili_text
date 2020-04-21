@@ -3,29 +3,33 @@ import * as style from "./style.scss";
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import { Icon, Tooltip } from "antd";
+<<<<<<< HEAD
+import useFetch from "src/useFetch";
+=======
 import { Link } from "web-router";
 // import useFetch from "src/useFetch";
+>>>>>>> 2f42d32e2b68bcc887d044fcb2a892f7bc84add3
 
 // 每个小方块
-export default function Component() {
-// const {data,revalidate}=useFetch({
-//   path:"",
-//   method:"post",
-//   request:{id:123456,content:props.value}
-// })
+export default function Component(props:{value:string}) {
+const {data,revalidate}=useFetch({
+   path:"user/watchLater/add",
+   method:"post",
+  request:{id:123456,content:props.value}
+ })
   return <div className={style.box}>
     <Link to="/playPage/" className={style.picture}>
       <div className={style.noHidden}>
         <div className={style.img}><img src={img2} id="img" width="190px" height="120px" /></div>
         <div className={style.title}>
-          <Icon type="play-circle" />
+          <Icon type="play-circle" onClick={revalidate}/>
         </div>
       </div>
       <div className={style.hidden}>
         <div className={style.img}><img src={img1} width="190px" height="120px" /></div>
         <div>
-          <Tooltip placement="topRight" title={'稍后再看'} mouseEnterDelay={0} className={style.fontSize} >
-            <Icon type="play-circle"  className={style.title} />
+          <Tooltip placement="topRight" title={data?.success?"添加成功":'稍后再看'} mouseEnterDelay={0} className={style.fontSize} >
+            <Icon type="play-circle" onClick={revalidate} className={style.title} />
           </Tooltip>
         </div>
 

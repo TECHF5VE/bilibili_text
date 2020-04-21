@@ -6,7 +6,7 @@ import "./base.scss";
 import Foot from './Foot';
 import Navigation from './Navigation';
 import Picture from './Picture';
-import { Router, Switch, Route } from 'web-router';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import TodoList from './Body/Animation/Left/Body/Upcontext/Component/TodoList';
 import SignIn from './Body/SignIn';
 import SignOn from './Body/SignOn';
@@ -48,7 +48,7 @@ function playPage(){
   </>
 }
 export default function App() {
-  return <Router>
+  return <BrowserRouter>
       <Switch>
         <Route path="/whachLater/">
           {defaultTop()}
@@ -61,7 +61,7 @@ export default function App() {
           {Bodys()}
         </Route>
       </Switch>
-    </Router>
+    </BrowserRouter>
     
 }
 
