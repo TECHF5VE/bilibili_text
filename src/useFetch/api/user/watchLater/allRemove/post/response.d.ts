@@ -6,5 +6,6 @@
  */
 
 export interface UserWatchLaterAllRemovePostResponse {
+  path: SetStateAction<string>;
   success: boolean;
 }

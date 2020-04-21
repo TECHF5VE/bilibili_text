@@ -7,10 +7,10 @@ export default function Left (props:{tag:string}){
   return <div className={style.box} >
     <Top tag={props.tag}/>
     <div className={style.line}>
-      <Component />
-      <Component />
-      <Component />
-      <Component />
+      <Component value={"赋值"}/>
+      <Component value={"赋值"}/>
+      <Component value={"赋值"}/>
+      <Component value={"赋值"}/>
     </div>
   </div>
 }
