@@ -25,7 +25,7 @@ export default function Player(props: { src: string }) {
     dropbox.addEventListener('dragenter', ade, false)
   })
   return <div>
-    <video controls width='800px' height="500px" preload="auto" onDrop={drop} id='fil'>
+    <video controls width='800px' height="500px" preload="auto" onDrop={drop} id='fil' ref={ba} >
       <source src={props.src} />
     </video>
   </div>
