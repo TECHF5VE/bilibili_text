@@ -2,7 +2,7 @@ import React from "react";
 import * as style from "./style.scss";
 import Header from "../SignIn/Header";
 import { Input, Select, Button } from "antd";
-import { Link, Redirect, Switch, Route } from "react-router-dom";
+import { Link, Redirect, Switch, Route } from "web-router";
 import useFetch from "src/useFetch";
 import { signIn } from "src/views/App";
 
