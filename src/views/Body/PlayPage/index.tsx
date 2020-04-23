@@ -4,11 +4,11 @@ import Right from "./Right";
 import Top from "src/views/Header/Top";
 import Left from "./Left";
 
-export default function PlayPage() {
+export default function PlayPage(props:{title:string,src:string}) {
   return <div className={style.box}>
     <Top />
     <div className={style.main}>
-      <Left />
+      <Left title={props.title} src={props.src} />
       <Right />
     </div>
   </div>
