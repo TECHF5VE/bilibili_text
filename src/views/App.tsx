@@ -44,7 +44,7 @@ function signOn() {
 }
 function playPage(){
   return<>
-    <PlayPage title="hamomo" src="http://www.hamomo.top/videos/诸神黄昏.mp4" />
+    <PlayPage title="哈默默" src="http://www.hamomo.top/videos/.mp4" />
   </>
 }
 export default function App() {
