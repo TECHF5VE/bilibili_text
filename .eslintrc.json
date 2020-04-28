@@ -75,7 +75,7 @@
     "eol-last": "off",
     "eqeqeq": [
       "error",
-      "smart" //
+      "smart" 
     ],
     "guard-for-in": "error",
     "id-blacklist": [
