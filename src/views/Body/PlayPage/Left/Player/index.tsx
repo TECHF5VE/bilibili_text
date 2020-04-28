@@ -1,32 +1,34 @@
 import React from "react";
-// import py from "src/videos/video1.mp4"
+import { Video } from 'video-player'
+import * as style from './style.scss'
+import { Dropdown, Button, Menu } from "antd";
 
 export default function Player(props: { src: string }) {
-
-  let play
-  const ba=React.useRef(null)
-  const drop = React.useCallback((e: React.DragEvent<HTMLVideoElement>) => {
-    e.stopPropagation();
-    e.preventDefault();
-    const video = e.dataTransfer;
-    const URL = window.URL || window.webkitURL;
-    console.log(URL.createObjectURL(video.files[0]))
-    play=URL.createObjectURL(video.files[0])
-    ba.current.src=play
-  }, [play])
-  React.useEffect(() => {
-    const ade = function (event: any) {
-      event.preventDefault()
-      event.stopPropagation();
-      return false
-    }
-    const dropbox = document.getElementById("fil");
-    dropbox.addEventListener('dragover', ade, false)
-    dropbox.addEventListener('dragenter', ade, false)
-  })
+  const menu = (
+    <Menu>
+      <Menu.Item>
+        <a rel="noopener noreferrer">
+          1x
+        </a>
+      </Menu.Item>
+      <Menu.Item>
+        <a rel="noopener noreferrer">
+          2x
+        </a>
+      </Menu.Item>
+      <Menu.Item>
+        <a rel="noopener noreferrer">
+          3x
+        </a>
+      </Menu.Item>
+    </Menu>
+  );
+  console.log(props.src)
   return <div>
-    <video controls width='800px' height="500px" preload="auto" onDrop={drop} id='fil' ref={ba} >
-      <source src={props.src} />
-    </video>
+    <div className={style.video}><Video  src='http://www.hamomo.top/videos/小女孩.mp4' size={800} post='default' pre='auto' />
+      <Dropdown className={style.drop} overlay={menu} placement="topCenter">
+        <Button>1x</Button>
+      </Dropdown>
+      </div>
   </div>
 }
