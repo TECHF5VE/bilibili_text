@@ -1,0 +1,20 @@
+.text{
+  height: 200px;
+  background-color: darkorange;
+}
+.video{
+  background-color: rgb(241, 159, 194);
+}
+.drop{
+  position: absolute;
+  top: 649px;
+  right: 1000px;
+  background-color: rgb(131, 131, 131);
+  transition: 0.3s;
+  opacity: 0;
+  border: 0;
+}
+:hover.video .drop{
+  opacity: 1;
+  transition: 0s;
+}

@@ -13,18 +13,15 @@
   "dependencies": {
     "antd": "3.17.0",
     "classnames": "^2.2.6",
-    "gh-pages": "^2.2.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "react-router-dom": "^4.3.1",
-    "swr": "^0.1.18"
+    "swr": "^0.1.18",
+    "video-player": "https://github.com/hamono/video-player.git",
+    "web-router": "https://github.com/wu-yu-xuan/web-router.git#v0.1.0"
   },
   "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "build": "node scripts/build.js"
   },
   "homepage": "https://hamono.github.io",
   "devDependencies": {
@@ -32,8 +29,6 @@
     "@types/node": "^10.3.4",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.0.11",
-    "@types/react-router": "^4.4.1",
-    "@types/react-router-dom": "^4.3.1",
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
     "case-sensitive-paths-webpack-plugin": "2.1.1",

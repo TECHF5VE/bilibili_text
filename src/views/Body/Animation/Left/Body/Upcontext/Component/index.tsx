@@ -3,12 +3,9 @@ import * as style from "./style.scss";
 import img1 from "./img1.jpg";
 import img2 from "./img2.jpg";
 import { Icon, Tooltip } from "antd";
-<<<<<<< HEAD
-import useFetch from "src/useFetch";
-=======
 import { Link } from "web-router";
+import useFetch from "src/useFetch";
 // import useFetch from "src/useFetch";
->>>>>>> 2f42d32e2b68bcc887d044fcb2a892f7bc84add3
 
 // 每个小方块
 export default function Component(props:{value:string}) {
