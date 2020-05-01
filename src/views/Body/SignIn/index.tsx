@@ -5,11 +5,13 @@ import { Link, Redirect } from "web-router";
 import Header from "./Header";
 import useFetch from "src/useFetch";
 
+
 export default function SignIn() {
   const storage = window.localStorage;
   const [remPassword, setRemPassword] = React.useState(false);
   const [inputValue, setInputValue] = React.useState(null);
   const [password, setPassword] = React.useState('');
+  //const [setSuccess]=React.useContext(statue);
 
   // 数据请求
   const { data, revalidate } = useFetch({
