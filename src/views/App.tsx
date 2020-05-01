@@ -57,6 +57,7 @@ export default function App() {
         <Route path="/signIn/">{signIn()}</Route>
         <Route path="/signOn/">{signOn()}</Route>
         <Route path="/playPage/">{playPage()}</Route>
+        <Route path="/Personal homePage/">{homePage()}</Route>
         <Route>
           {Bodys()}
         </Route>
