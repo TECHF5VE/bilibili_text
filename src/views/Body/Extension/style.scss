@@ -1,8 +1,16 @@
-.a{
-    height: 270px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    width: 100%;
-  }
+.a {
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.main{
+  width:75%;
+}
+.line {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

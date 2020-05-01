@@ -6,7 +6,7 @@ import "./base.scss";
 import Foot from './Foot';
 import Navigation from './Navigation';
 import Picture from './Picture';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Router, Switch, Route } from 'web-router';
 import TodoList from './Body/Animation/Left/Body/Upcontext/Component/TodoList';
 import SignIn from './Body/SignIn';
 import SignOn from './Body/SignOn';
@@ -44,11 +44,11 @@ function signOn() {
 }
 function playPage(){
   return<>
-    <PlayPage />
+    <PlayPage title="哈默默" src="http://www.hamomo.top/videos/.mp4" />
   </>
 }
 export default function App() {
-  return <BrowserRouter>
+  return <Router>
       <Switch>
         <Route path="/whachLater/">
           {defaultTop()}
@@ -61,7 +61,7 @@ export default function App() {
           {Bodys()}
         </Route>
       </Switch>
-    </BrowserRouter>
+    </Router>
     
 }
 
