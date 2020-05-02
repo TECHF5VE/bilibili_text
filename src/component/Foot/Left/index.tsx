@@ -1,6 +1,6 @@
 import React from "react";
 import * as style from "./style.scss";
-import Compent from "../../../../component/FootPart";
+import Compent from "../FootPart";
 
 export default function Center() {
   return <div className={style.box}>

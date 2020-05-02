@@ -1,5 +1,5 @@
 import React from "react";
-import Top from "src/main/Body/Header/Top";
+import Top from "src/component/Top";
 import * as style from "./style.scss";
 import img from "src/images/img7.png";
 

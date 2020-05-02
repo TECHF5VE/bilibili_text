@@ -1,7 +1,7 @@
 import React from "react";
 import * as style from './style.scss';
 import Right from "./Right";
-import Top from "src/main/Body/Header/Top";
+import Top from "src/component/Top";
 import Left from "./Left";
 
 export default function PlayPage(props:{title:string,src:string}) {

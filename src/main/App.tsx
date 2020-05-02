@@ -6,7 +6,7 @@ import LaterList from './LaterList';
 import SignIn from './SignIn';
 import SignOn from './SignOn';
 import PlayPage from './PlayPage';
-import  SignContext  from './Body/Header/Top/Right/SignContext';
+import  SignContext  from '../component/Top/Right/SignContext';
 
 
 export default function App() {

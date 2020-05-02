@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import Top from "./Top";
+import Top from "../../../component/Top";
 import img from "src/images/img0.png";
 
 const back={

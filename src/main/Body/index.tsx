@@ -7,7 +7,7 @@ import Fourth from './Animation';
 import TwentyFifth from './Recommend';
 import Fifth from './FolkOpera';
 import Header from './Header';
-import Foot from './Foot';
+import Foot from '../../component/Foot';
 import Up from './Up';
 
 export default function Body() {
