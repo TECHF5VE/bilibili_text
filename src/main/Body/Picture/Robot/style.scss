@@ -1,0 +1,123 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  width: 64px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ear1 {
+  width: 14px;
+  height: 36px;
+  background-color: black;
+  border-radius: 45%;
+  transform: rotate(-30deg);
+}
+
+.ear2 {
+
+  width: 14px;
+  height: 36px;
+  background-color: black;
+  border-radius: 45%;
+  transform: rotate(30deg);
+}
+
+.two {
+  position: absolute;
+  top: 25px;
+  width: 90px;
+  height: 75px;
+  border: 13px solid black;
+  border-radius: 25%;
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  width: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mouth {
+  width: 20px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50% 50% 0 0;
+}
+
+.eye {
+  width: 12px;
+  height: 12px;
+  background-color: thistle;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.three {
+  margin-top:66px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aim1 {
+  width: 16px;
+  height: 60px;
+  background-color: black;
+  border-radius: 35%;
+  transform: rotate(30deg);
+}
+
+.aim2 {
+  width: 16px;
+  height: 60px;
+  background-color: black;
+  border-radius: 35%;
+  transform: rotate(-30deg);
+}
+
+.body {
+  width: 65px;
+  height: 70px;
+  background-color: black;
+  border-radius: 35% 35% 20% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+.tip {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.four {
+  margin-top: -8px;
+  width: 45px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang {
+  width: 16px;
+  height: 40px;
+  background-color: black;
+  border-radius: 30%;
+}
