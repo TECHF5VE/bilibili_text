@@ -1,6 +1,6 @@
 import React from "react";
 import Top from "./Top";
-import Component from "../../Animation/Left/Body/Upcontext/Component";
+import Component from "../../../../component/BasicPart";
 import * as style from "./style.scss";
 
 export default function Left (props:{tag: any}){

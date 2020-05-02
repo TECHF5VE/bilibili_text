@@ -2,7 +2,7 @@ import * as React from "react";
 import * as style from "./style.scss";
 import img from "src/images/img8.png";
 import { Carousel } from 'antd';
-import Upwait from "./Upwait";
+import Upwait from "../../../component/UpVideoBox";
 
 
 export default function Top() {

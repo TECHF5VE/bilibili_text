@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import Fan from "./Fan"
+import Fan from "../../../../../../component/ManHuaBox"
 export default function Down(){
     return <div className={style.a}>
 <div className={style.b}><Fan />

@@ -4,6 +4,7 @@ import { Input, Button, Icon, } from "antd";
 import { Link, Redirect } from "web-router";
 import Header from "./Header";
 import useFetch from "src/useFetch/usePost";
+import  SignContext  from "../Body/Header/Top/Right/SignContext";
 
 
 export default function SignIn() {
@@ -11,7 +12,7 @@ export default function SignIn() {
   const [remPassword, setRemPassword] = React.useState(false);
   const [inputValue, setInputValue] = React.useState(null);
   const [password, setPassword] = React.useState('');
-  //const [setSuccess]=React.useContext(statue);
+  const {setSuccess}=React.useContext(SignContext);
 
   // 数据请求
   const { data, revalidate } = useFetch({
@@ -59,6 +60,7 @@ export default function SignIn() {
   }, [remPassword, storage.remPassword]);
 
   if (data?.success) {
+    setSuccess(data?.success)
     return <Redirect to='/' />
   }
   return <div className={style.box}>
@@ -76,7 +78,7 @@ export default function SignIn() {
         <a className={style.lostPw} onClick={alertWord}>忘记密码？！</a>
       </div>
       <div className={style.button}>
-        <Button type="primary" className={style.buttonOne} onClick={revalidate}><Link to="/homepage/" />登 录</Button>
+        <Button type="primary" className={style.buttonOne} onClick={revalidate}>登 录</Button>
         <Button className={style.buttonOne}><Link to="/signOn/">注 册</Link></Button>
       </div>
     </div>

@@ -1,19 +1,23 @@
-.a{
-    // background-color: crimson;
-    width:35%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.a {
+  // background-color: crimson;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.b{
-    
+.b {
+  color: rgb(116, 113, 113);
+  text-decoration: none;
+  font-size: small;
+}
+.signIn {
+  font-size: small;
+}
+.span {
+  margin-left: 7px;
+}
+.login {
     color:rgb(116, 113, 113);
-    text-decoration: none;
-    font-size: small;
-}
-.signIn{
-    font-size: small;
-}
-.span{
-    margin-left: 7px;
+    font-size: medium;
+    margin-right: 5px;
 }

@@ -6,10 +6,13 @@ import LaterList from './LaterList';
 import SignIn from './SignIn';
 import SignOn from './SignOn';
 import PlayPage from './PlayPage';
+import  SignContext  from './Body/Header/Top/Right/SignContext';
 
 
 export default function App() {
-  return <Router>
+  const [success,setSuccess]=React.useState(false)
+  return <SignContext.Provider value={{success,setSuccess}}>
+  <Router>
       <Switch>
         <Route path="/whachLater/">
           {<LaterList />}
@@ -24,7 +27,7 @@ export default function App() {
         </Route>
       </Switch>
     </Router>
-    
+    </SignContext.Provider>
 }
 
 

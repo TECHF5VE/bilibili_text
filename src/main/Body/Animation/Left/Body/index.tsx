@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import Component from "./Upcontext/Component";
+import Component from "../../../../../component/BasicPart";
 
 export default function Body() {
   return <div className={style.main}>

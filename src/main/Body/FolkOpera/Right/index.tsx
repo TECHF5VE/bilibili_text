@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Button, Icon } from "antd";
 import * as style from "./style.scss";
-import List from "./List";
+import List from "../../../../component/List";
 
 export default function Right (){
   return <div className={style.box}>

@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import Component from "../Animation/Left/Body/Upcontext/Component";
+import Component from "../../../component/BasicPart";
 import Top from "./Top";
 import Right from "./Right";
 
