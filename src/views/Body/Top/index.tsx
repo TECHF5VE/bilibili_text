@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as style from "./style.scss";
-import img from "./node_modules/src/images/img8.png";
+import img from "src/images/img8.png";
 import { Carousel } from 'antd';
 import Upwait from "../../../component/UpVideo";
 

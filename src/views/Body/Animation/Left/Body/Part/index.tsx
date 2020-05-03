@@ -1,7 +1,7 @@
 import React from "react";
 import * as style from "./style.scss";
-import img1 from "src/images/component1.jpg";
-import img2 from "src/images/component2.jpg";
+import img1 from "./node_modules/src/images/component1.jpg";
+import img2 from "./node_modules/src/images/component2.jpg";
 import { Icon, Tooltip } from "antd";
 import { Link } from "web-router";
 import useFetch from "src/useFetch/usePost";

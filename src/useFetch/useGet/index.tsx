@@ -7,7 +7,7 @@ async function fetche(path: string) {
 }
 export default function useGet(path: string) {
   const { data, error } = useSWR(path, fetche)
-  let datas=data
+  const datas=data
   return {
     datas,
     error
