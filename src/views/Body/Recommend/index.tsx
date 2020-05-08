@@ -3,9 +3,9 @@ import * as style from "./style.scss";
 import Left from "./Left";
 import Right from "./Right";
 
-export default function TwentyFifth (props:{tag:string}){
-  return <div className={style.main} id="TwentyFifth" >
-    <Left tag={props.tag}/>
+export default function Recommend (){
+  return <div className={style.main} id="Recommend" >
+    <Left tag="特别推荐"/>
     <Right />
   </div>
 }
