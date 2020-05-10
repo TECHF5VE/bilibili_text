@@ -1,0 +1,54 @@
+.box{
+  position: fixed;
+  top:300px;
+  right: 100px;
+}
+.ears{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 40px;
+  width: 60px;
+  .leftEar{
+    margin-top: 35px;
+    margin-left: 13px;
+    width: 8px;
+    height: 40px;
+    background-color: black;
+    border-radius: 40% ;
+    transform: rotate(-30deg);
+  }
+  .rightEar{
+    margin-top: 35px;
+    margin-right: 13px;
+    width: 8px;
+    height: 40px;
+    background-color: black;
+    border-radius: 40%;
+    transform: rotate(30deg);
+  }
+}
+.ul{
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 60px;
+  height:180px ;
+}
+.li{
+  width: 60px;
+  height: 30px;
+  border: 1px solid rgba(202, 202, 202, 0.52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.li:hover {
+   background-color: rgb(86, 180, 209);
+   border: 0;
+   color: white;
+   transition: 0.3s;
+}

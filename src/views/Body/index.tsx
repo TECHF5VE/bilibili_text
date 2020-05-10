@@ -1,27 +1,29 @@
 import * as React from 'react';
 import * as style from './style.scss';
-import First from './Extension';
-import Third from './Live';
+import Extension from './Extension';
+import Live from './Live';
 import Top from './Top';
-import Fourth from './Animation';
-import TwentyFifth from './Recommend';
-import Fifth from './FolkOpera';
+import Animation from './Animation';
+import Recommend from './Recommend';
+import FolkOpera from './FolkOpera';
 import Header from 'src/component/Header';
 import Foot from '../../component/Foot';
 import Up from 'src/component/Up';
+import Navication from './Navication';
 
 export default function Body() {
   return (
     <div>
       <Header />
       <div className={style.a}>
+        <Navication />
         <Up />
         <Top />
-        <First />
-        <Third />
-        <Fourth />
-        <Fifth />
-        <TwentyFifth tag="特别推荐" />
+        <Extension />
+        <Live />
+        <Animation />
+        <FolkOpera />
+        <Recommend  />
       </div>
       <Foot />
     </div>
