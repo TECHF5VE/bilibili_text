@@ -12,18 +12,23 @@ import Up from 'src/component/Up';
 import Navication from './Navication';
 
 export default function Body() {
+  const [move, setMove] = React.useState(null)
+  const handleWheel = React.useCallback(() => {
+    console.log(move)
+    setMove(window.scrollY)
+  }, []) 
   return (
-    <div>
+    <div onWheel={handleWheel}>
       <Header />
       <div className={style.a}>
-        <Navication />
+        <Navication moves={move}/>
         <Up />
         <Top />
         <Extension />
         <Live />
         <Animation />
         <FolkOpera />
-        <Recommend  />
+        <Recommend />
       </div>
       <Foot />
     </div>
