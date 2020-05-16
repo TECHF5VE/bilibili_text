@@ -5,7 +5,7 @@ import HomeLoading from './component/Loading/HomePageLoding';
 const App=React.lazy(()=>import('./views/App'))
 
 ReactDOM.render(
-  <React.Suspense fallback={<HomeLoading />}>
+  <React.Suspense fallback={<HomeLoading />} > 
     <App />
   </React.Suspense>
 
