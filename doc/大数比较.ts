@@ -4,14 +4,11 @@ interface I{
   z:boolean
 }
 
-function js(a:string,b:string):I{
-  if(){
-
-  }
+function js(a:string,b:string){
   const aL=a.length;
   const bL=b.length;
   if(aL>bL){
-    
+
   }
 }
 

@@ -14,11 +14,10 @@ import Navication from './Navication';
 export default function Body() {
   const [move, setMove] = React.useState(null)
   const handleWheel = React.useCallback(() => {
-    console.log(1)
     setMove(window.scrollY)
   }, [move]) 
   return (
-    <div onWheel={handleWheel}>
+    <div onScroll={()=>handleWheel()}>
       <Header />
       <div className={style.a}>
         <Navication moves={move} handleMove={setMove}/>
