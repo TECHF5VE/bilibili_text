@@ -1,43 +1,35 @@
-import useSWR from 'swr';
 import isDev from 'src/isDev';
-import { useCallback, useState } from 'react';
+import React from 'react';
 
-// post request ,If you want to use "post", please export this instead of using the above ,this is true
 async function fetcher(path: string, request: string) {
   const myInit = {
-    headers: {
-      'Content-Type': 'application/json; charset=utf-8'
-    },
+    headers: new Headers({
+      'Content-Type': 'application/json'
+    }),
     body: request,
     method: 'post'
   };
   const response = isDev
     ? await fetch(`/mock/${path}/post.json`)
     : await fetch(`${path}`, myInit);
+  console.log(myInit);
   return response.json();
 }
-export default function usePost(Request: { path: string; request: {} }) {
-  const [suppress, setSuppress] = useState(true);
-  const swr = useSWR(
-    suppress ? null : [Request.path, JSON.stringify(Request.request)],
-    fetcher,
-    {
-      suspense: false,
-      revalidateOnFocus: false
-    }
-  );
-  const revalidate = useCallback(() => {
-    if (suppress) {
-      setSuppress(false);
-      return Promise.resolve(true);
-    }
-    return swr.revalidate();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [suppress, swr.revalidate]);
+export default function usePost(Request: { path: string; request: object }) {
+  const [data, setData] = React.useState(null);
+  const [suppress, setSuppress] = React.useState(true);
+  const parser = suppress
+    ? null
+    : [Request.path, JSON.stringify(Request.request)];
+  if(!suppress){
+    fetcher(parser[0], parser[1]).then(res => setData(res));
+    setSuppress(true);
+  }
+  const revalidate = React.useCallback(() => {
+    setSuppress(false);
+  }, []);
   return {
-    data: swr.data,
-    error: swr.error,
-    isValidating: swr.isValidating,
+    data,
     revalidate
   };
 }
