@@ -29,8 +29,7 @@ export default function Navication() {
     } else if (window.scrollY < 320) {
       setMove(null);
     }
-  }
-
+  };
   const [list, setList] = React.useState(['推广', '直播', '动画', '番剧', '推荐']);
   const [idList, setIdList] = React.useState(['#Extension', '#Live', '#Animation', '#FolkOpera', '#Recommend']);
   const [drag, setDrag] = React.useState(false)
@@ -40,13 +39,13 @@ export default function Navication() {
   let flag2: number;
   const handleClick = React.useCallback(() => {
     console.log(drag)
-    if(drag){
+    if (drag) {
       setDrag(false);
-    }else{
+    } else {
       setDrag(true);
     }
   }, [drag])
-  const handleStyle = function (a:boolean) {
+  const handleStyle = function (a: boolean) {
     if (a) {
       return {
         backgroundColor: "rgb(86, 180, 209)",
@@ -84,12 +83,18 @@ export default function Navication() {
   React.useEffect(() => {
     const li = document.querySelectorAll('li');
     document.addEventListener('scroll', renderStyle);
-    // document.removeEventListener('scroll',renderStyle);
     for (let i = 0; i < 5; i++) {
       li[i].addEventListener('dragover', banDefault, false)
       li[i].addEventListener('dragenter', banDefault, false)
     }
-  }, [list]);
+    return () => {
+      document.removeEventListener('scroll', renderStyle);
+      for (let i = 0; i < 5; i++) {
+        li[i].removeEventListener('dragover', banDefault, false)
+        li[i].removeEventListener('dragenter', banDefault, false)
+      }
+    }
+  });
   console.log(list + '123')
   return <div className={style.box}>
     <div className={style.ears}>
