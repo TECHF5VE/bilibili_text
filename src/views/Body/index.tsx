@@ -9,7 +9,7 @@ import FolkOpera from './FolkOpera';
 import Header from 'src/component/Header';
 import Foot from '../../component/Foot';
 import Up from 'src/component/Up';
-import Navication from './Navication';
+import Navication from './Navigation';
 
 export default function Body() {
   return (
