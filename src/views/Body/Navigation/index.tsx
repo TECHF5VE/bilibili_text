@@ -38,7 +38,6 @@ export default function Navication() {
   let flag1: number;
   let flag2: number;
   const handleClick = React.useCallback(() => {
-    console.log(drag)
     if (drag) {
       setDrag(false);
     } else {
@@ -72,7 +71,6 @@ export default function Navication() {
     idList[flag2] = temp2;
     setIdList(idList)
     setList([...list])
-    console.log(list)
   }
 
   function banDefault(event: any) {
@@ -95,7 +93,6 @@ export default function Navication() {
       }
     }
   });
-  console.log(list + '123')
   return <div className={style.box}>
     <div className={style.ears}>
       <div className={style.leftEar}></div>
