@@ -23,7 +23,6 @@ export default function Player(props: { src: string }) {
       </Menu.Item>
     </Menu>
   );
-  console.log(props.src)
   return <div>
     <div className={style.video}><Video  src='http://www.hamomo.top/videos/小女孩.mp4' size={800} post='default' pre='auto' />
       <Dropdown className={style.drop} overlay={menu} placement="topCenter">

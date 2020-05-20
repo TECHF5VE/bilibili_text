@@ -1,5 +1,5 @@
 {
-  "name": "second",
+  "name": "bilibili",
   "version": "0.1.0",
   "private": true,
   "repository": {
@@ -79,7 +79,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,ts,tsx，js,css,md}": "prettier --write"
   }
 }
