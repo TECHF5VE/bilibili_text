@@ -1,4 +1,3 @@
-import isDev from 'src/isDev';
 import React from 'react';
 
 async function fetcher(path: string, request: string) {
@@ -9,9 +8,7 @@ async function fetcher(path: string, request: string) {
     body: request,
     method: 'post'
   };
-  const response = isDev
-    ? await fetch(`/mock/${path}/post.json`)
-    : await fetch(`${path}`, myInit);
+  const response = await fetch(`/mock/${path}/post.json`);
   console.log(myInit);
   return response.json();
 }
