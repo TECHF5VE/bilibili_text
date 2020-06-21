@@ -2,14 +2,14 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import HomeLoading from './component/Loading/HomePageLoding';
-const App=React.lazy(()=>import('./views/App'))
+const App = React.lazy(() => import('./views/App'));
 
 ReactDOM.render(
-  <React.Suspense fallback={<HomeLoading />} > 
+  <React.Suspense fallback={<HomeLoading />}>
     <App />
-  </React.Suspense>
+  </React.Suspense>,
 
-, document.getElementById('root'));
-
+  document.getElementById('root')
+);
 
 registerServiceWorker();
