@@ -1,5 +1,6 @@
-// tslint:disable:no-console
 // In production, we register a service worker to serve assets from local cache.
+
+import { Modal } from 'antd';
 
 // This lets the app load faster on subsequent visits in production, and gives
 // it offline capabilities. However, it also means that developers (and users)
@@ -24,6 +25,7 @@ export default function register() {
   if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
     const publicUrl = new URL(
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       process.env.PUBLIC_URL!,
       window.location.toString()
     );
@@ -71,7 +73,14 @@ function registerValidSW(swUrl: string) {
                 // the fresh content will have been added to the cache.
                 // It's the perfect time to display a 'New content is
                 // available; please refresh.' message in your web app.
-                console.log('New content is available; please refresh.');
+                Modal.confirm({
+                  title: '新版博客系统已准备就绪',
+                  content: '重载页面以完成更新',
+                  okText: '更新',
+                  cancelText: '取消',
+                  okType: 'primary',
+                  onOk: () => location.reload()
+                });
               } else {
                 // At this point, everything has been precached.
                 // It's the perfect time to display a
