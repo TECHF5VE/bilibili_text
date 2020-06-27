@@ -3,3 +3,4 @@ build
 scripts
 config
 doc
+tsconfig.json

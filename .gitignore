@@ -36,3 +36,7 @@ node_modules
 
 # Build file
 build
+package-lock.json
+
+# eslint cache
+.eslintignore

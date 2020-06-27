@@ -1,10 +1,15 @@
+// Do this as the first thing so that any code reading it knows the right env.
 process.env.BABEL_ENV = 'development';
 process.env.NODE_ENV = 'development';
 
+// Makes the script crash on unhandled rejections instead of silently
+// ignoring them. In the future, promise rejections that are not handled will
+// terminate the Node.js process with a non-zero exit code.
 process.on('unhandledRejection', err => {
   throw err;
 });
 
+// Ensure environment variables are read.
 require('../config/env');
 
 const fs = require('fs');
@@ -20,18 +25,20 @@ const {
   prepareUrls
 } = require('react-dev-utils/WebpackDevServerUtils');
 const openBrowser = require('react-dev-utils/openBrowser');
-const paths = require('../config/paths');
+const path = require('../config/paths');
 const config = require('../config/webpack.config.dev');
 const createDevServerConfig = require('../config/webpackDevServer.config');
 
 const useYarn = fs.existsSync(paths.yarnLockFile);
 const isInteractive = process.stdout.isTTY;
 
+// Warn and crash if required files are missing
 if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
   process.exit(1);
 }
 
-const DEFAULT_PORT = parseInt(process.env.PORT, 10) || 3000;
+// Tools like Cloud9 rely on this.
+const DEFAULT_PORT = parseInt(process.env.PORT, 10) || 8000;
 const HOST = process.env.HOST || '0.0.0.0';
 
 if (process.env.HOST) {
@@ -49,6 +56,8 @@ if (process.env.HOST) {
   console.log();
 }
 
+// We attempt to use the default port but if it is busy, we offer the user to
+// run on a different port. `choosePort()` Promise resolves to the next free port.
 choosePort(HOST, DEFAULT_PORT)
   .then((port: number) => {
     if (port == null) {
@@ -88,7 +97,7 @@ choosePort(HOST, DEFAULT_PORT)
       });
     });
   })
-  .catch((err: any) => {
+  .catch((err: { message: any }) => {
     if (err && err.message) {
       console.log(err.message);
     }
