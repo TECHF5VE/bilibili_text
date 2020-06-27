@@ -74,7 +74,7 @@ function registerValidSW(swUrl: string) {
                 // It's the perfect time to display a 'New content is
                 // available; please refresh.' message in your web app.
                 Modal.confirm({
-                  title: '新版博客系统已准备就绪',
+                  title: '新版bilibili已准备就绪',
                   content: '重载页面以完成更新',
                   okText: '更新',
                   cancelText: '取消',
