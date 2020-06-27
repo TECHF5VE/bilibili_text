@@ -25,7 +25,7 @@ const {
   prepareUrls
 } = require('react-dev-utils/WebpackDevServerUtils');
 const openBrowser = require('react-dev-utils/openBrowser');
-const path = require('../config/paths');
+const paths = require('../config/paths');
 const config = require('../config/webpack.config.dev');
 const createDevServerConfig = require('../config/webpackDevServer.config');
 
@@ -103,3 +103,5 @@ choosePort(HOST, DEFAULT_PORT)
     }
     process.exit(1);
   });
+// 防止ts报错，并无实际意义
+export {};

@@ -11,7 +11,6 @@
     "@types/react": "^16.8.1"
   },
   "dependencies": {
-    "@types/chalk": "^2.2.0",
     "antd": "3.17.0",
     "classnames": "^2.2.6",
     "react": "^16.8.0",
@@ -21,8 +20,8 @@
     "web-router": "https://github.com/wu-yu-xuan/web-router.git#v0.1.0"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js"
+    "start": "ts-node scripts/start.ts",
+    "build": "ts-node scripts/build.ts"
   },
   "homepage": "https://bilibili.hamomo.top",
   "devDependencies": {

@@ -35,7 +35,6 @@
     "jest",
     "src/setupTests.ts",
     "config",
-    "doc",
-    "tsconfig.json"
+    "doc/"
   ]
 }
