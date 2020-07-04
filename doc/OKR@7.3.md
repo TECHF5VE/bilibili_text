@@ -9,7 +9,7 @@
 | 主页     |                      header.get.json; body.get.json                       |   api\index    | 无   |
 | 登录     |                              logon.post.json                              |   api\logon    | 无   |
 | 注册     |                              login.post.json                              |   api\login    | 无   |
-| 稍后再看 | watchLater.get.json; add.post.json; removeAll.post.json;search.post.json; | api\watchLater | 无   |
+| 稍后再看 | watchLater.get.json; add.post.json; removeAll.post.json;search.get.json; | api\watchLater | 无   |
 | 视频播放 |                                    \                                      |       \        | 无   |
 
 ### 此工作的重点在于将主页等数据独立，其余页面在之前的请求基础上完善
